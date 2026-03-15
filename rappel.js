@@ -25,7 +25,7 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         from: fromEmail,
-        to: ['hello@btpforms.com'],
+        to: ['hugo@astrova.fr', 'thibaud@astrova.fr'],
         subject: `📞 Demande de rappel — ${prenom} ${nom}`,
         html: `
           <div style="font-family: 'IBM Plex Sans', sans-serif; max-width: 560px; margin: 0 auto; padding: 32px; background: #f7f7fa; border-radius: 16px;">
