@@ -385,6 +385,48 @@ footer{background:var(--bgl);border-top:1px solid var(--border);padding:60px 0 3
 .ftleg a{font-size:12px;color:var(--muted);transition:color .15s}
 .ftleg a:hover{color:var(--text)}
 
+
+/* ══════════════ TEMPLATES SECTION ══════════════ */
+.tpl-section{background:#fff}
+.tpl-scroll-wrap{overflow:hidden;margin-top:52px;position:relative}
+.tpl-scroll-wrap::before,.tpl-scroll-wrap::after{
+  content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none
+}
+.tpl-scroll-wrap::before{left:0;background:linear-gradient(to right,#fff,transparent)}
+.tpl-scroll-wrap::after{right:0;background:linear-gradient(to left,#fff,transparent)}
+.tpl-grid{display:flex;gap:14px;padding:8px 4px 16px;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-behavior:smooth;scrollbar-width:none}
+.tpl-grid::-webkit-scrollbar{display:none}
+.tpl-card{
+  background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:22px 20px;
+  min-width:220px;max-width:220px;flex-shrink:0;cursor:pointer;
+  transition:transform .22s cubic-bezier(.22,1,.36,1),box-shadow .22s,border-color .22s;
+  position:relative;overflow:hidden;
+}
+.tpl-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.08);border-color:rgba(50,130,222,.3)}
+.tpl-card-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px}
+.tpl-ico{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.tpl-tag{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:6px;border:1px solid;white-space:nowrap}
+.tpl-tag-sec{background:#fff1f2;color:#be123c;border-color:#fecdd3}
+.tpl-tag-int{background:#f0fdf4;color:#15803d;border-color:#bbf7d0}
+.tpl-tag-chan{background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe}
+.tpl-tag-log{background:#fdf4ff;color:#7e22ce;border-color:#e9d5ff}
+.tpl-tag-rh{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
+.tpl-card h3{font-family:'IBM Plex Sans',sans-serif;font-size:14.5px;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.3}
+.tpl-card p{font-size:12px;color:var(--muted);line-height:1.55;font-weight:300}
+.tpl-card-footer{margin-top:16px;display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted)}
+.tpl-card-footer::before{content:'📄';font-size:12px}
+.tpl-card-shine{
+  position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.25) 0%,rgba(255,255,255,0) 60%);
+  pointer-events:none;opacity:0;transition:opacity .22s
+}
+.tpl-card:hover .tpl-card-shine{opacity:1}
+.tpl-cta-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:40px;flex-wrap:wrap}
+.tpl-count-badge{background:var(--P);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:8px;margin-left:6px}
+@media(max-width:640px){
+  .tpl-card{min-width:188px;max-width:188px;padding:18px 16px}
+  .tpl-scroll-wrap::before,.tpl-scroll-wrap::after{width:40px}
+}
+
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){
   .appbody{grid-template-columns:180px 1fr 220px}
@@ -1062,6 +1104,187 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
     <div class="hstep"><div class="hn">01</div><div class="hic">📤</div><h3>Uploadez votre PDF</h3><p>Importez n'importe quel PDF — rapport, PV de réception, permis de travail. Votre mise en page graphique est préservée à l'identique, page par page.</p></div>
     <div class="hstep"><div class="hn">02</div><div class="hic">🎨</div><h3>Posez vos champs</h3><p>Glissez-déposez les 7 types de champs sur votre PDF. Configurez la description et si besoin les champs liés à vos outils internes.</p></div>
     <div class="hstep"><div class="hn">03</div><div class="hic">📥</div><h3>Publiez & collectez</h3><p>Passez en statut "Public". Partagez le lien. Vos équipes remplissent, vous récupérez des PDF complets dans Soumissions — et dans vos outils si connectés.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ══ TEMPLATES ══ -->
+<section class="tpl-section">
+<div class="w">
+  <div style="text-align:center">
+    <div class="slbl rv">Prêts à l'emploi</div>
+    <h2 class="st rv" style="text-align:center;margin-left:auto;margin-right:auto">
+      Démarrez avec un template BTP
+    </h2>
+    <p class="ss rv" style="margin:0 auto;text-align:center">
+      Plus de 20 formulaires métier préconfigurés, adaptés aux usages terrain du BTP.
+      Personnalisez-les en quelques clics.
+    </p>
+  </div>
+</div>
+<!-- Scrollable cards — full bleed -->
+<div style="max-width:100%;margin-top:0">
+  <div class="tpl-scroll-wrap rv">
+    <div class="tpl-grid" id="tpl-grid">
+
+      <!-- Sécurité -->
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#fff1f2">🔥</div>
+          <span class="tpl-tag tpl-tag-sec">Sécurité</span>
+        </div>
+        <h3>Permis de feu</h3>
+        <p>Autorisation de travaux par points chauds avec visa conducteur.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#fff1f2">🦺</div>
+          <span class="tpl-tag tpl-tag-sec">Sécurité</span>
+        </div>
+        <h3>Contrôle EPI</h3>
+        <p>Vérification des équipements de protection individuelle sur chantier.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#fff1f2">⚠️</div>
+          <span class="tpl-tag tpl-tag-sec">Sécurité</span>
+        </div>
+        <h3>Déclaration de presque-accident</h3>
+        <p>Fiche de remontée d'incident et d'analyse des causes.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <!-- Intervention -->
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#f0fdf4">🔧</div>
+          <span class="tpl-tag tpl-tag-int">Intervention</span>
+        </div>
+        <h3>Rapport d'intervention</h3>
+        <p>Fiche complète d'intervention terrain avec signature client intégrée.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#f0fdf4">✅</div>
+          <span class="tpl-tag tpl-tag-int">Intervention</span>
+        </div>
+        <h3>PV de réception de travaux</h3>
+        <p>Procès-verbal dématérialisé avec réserves et photos annexées.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#f0fdf4">📋</div>
+          <span class="tpl-tag tpl-tag-int">Intervention</span>
+        </div>
+        <h3>Bon d'intervention SAV</h3>
+        <p>Suivi des interventions après-vente avec traçabilité complète.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <!-- Chantier -->
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#eff6ff">🏗️</div>
+          <span class="tpl-tag tpl-tag-chan">Chantier</span>
+        </div>
+        <h3>Rapport journalier de chantier</h3>
+        <p>Avancement, météo, effectif et incidents du jour.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#eff6ff">🔑</div>
+          <span class="tpl-tag tpl-tag-chan">Chantier</span>
+        </div>
+        <h3>Demande d'accès chantier</h3>
+        <p>Contrôle des entrées avec justificatifs et habilitations requises.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#eff6ff">📸</div>
+          <span class="tpl-tag tpl-tag-chan">Chantier</span>
+        </div>
+        <h3>Fiche d'observation sécurité</h3>
+        <p>Constat terrain avec photo et plan d'action corrective immédiate.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <!-- Logistique -->
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#fdf4ff">🚚</div>
+          <span class="tpl-tag tpl-tag-log">Logistique</span>
+        </div>
+        <h3>Bon de livraison</h3>
+        <p>Réception de matériaux avec quantités, état et signature livreur.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#fdf4ff">📦</div>
+          <span class="tpl-tag tpl-tag-log">Logistique</span>
+        </div>
+        <h3>Inventaire outillage</h3>
+        <p>État du matériel, numéros de série et affectation par chantier.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <!-- RH / Présence -->
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#fff7ed">👷</div>
+          <span class="tpl-tag tpl-tag-rh">Présence</span>
+        </div>
+        <h3>Feuille de présence</h3>
+        <p>Pointage des heures par salarié avec émargement et validation.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+      <div class="tpl-card">
+        <div class="tpl-card-shine"></div>
+        <div class="tpl-card-top">
+          <div class="tpl-ico" style="background:#fff7ed">🪪</div>
+          <span class="tpl-tag tpl-tag-rh">Présence</span>
+        </div>
+        <h3>Accueil sécurité intérimaire</h3>
+        <p>Fiche d'accueil, remise des consignes et signature de prise en compte.</p>
+        <div class="tpl-card-footer">Formulaire PDF</div>
+      </div>
+
+    </div><!-- /tpl-grid -->
+  </div><!-- /tpl-scroll-wrap -->
+</div>
+
+<div class="w">
+  <div class="tpl-cta-row rv">
+    <a href="fonctionnalites-templates.html" class="bh1">
+      Voir tous les templates <span class="tpl-count-badge">+20</span>
+    </a>
+    <a href="https://btpforms.com" class="bh2">Utiliser votre propre PDF →</a>
   </div>
 </div>
 </section>
