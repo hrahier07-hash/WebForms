@@ -1,5 +1,4 @@
-export default async function handler(req, res) {
-  // CORS headers
+module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -14,7 +13,7 @@ export default async function handler(req, res) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const fromEmail = process.env.RESEND_FROM_EMAIL || 'BTP Forms <hello@btpforms.com>';
+  const fromEmail = process.env.RESEND_FROM_EMAIL || 'BTPForms <hello@btpforms.com>';
 
   try {
     const response = await fetch('https://api.resend.com/emails', {
