@@ -117,6 +117,7 @@
         🏢 Entreprise : 79€/mois (au lieu de 99€)<br><br>
         Vous pouvez choisir votre mode de facturation directement sur la page tarifs.`
     },
+  /* ── Q&R ÉTENDUES ── */
     /* ── 100 Q&R ADDITIONNELLES ── */
     { tags: ['bonjour', 'salut', 'hello', 'bonsoir', 'hey'], response: `Bonjour 👋 Je suis l'assistant BTPForms. Comment puis-je vous aider ?` },
     { tags: ['ca va', 'comment vas', 'vous allez'], response: `Très bien merci ! Je suis là pour répondre à vos questions sur BTPForms.` },
@@ -195,8 +196,27 @@
     { tags: ['bon livraison', 'livraison', 'transport', 'reception marchandise'], response: `Oui, les bons de livraison sont l'un des formulaires les plus utilisés sur BTPForms.` },
     { tags: ['controle qualite', 'contrôle qualité', 'qualité', 'inspection qualite'], response: `Oui, BTPForms est adapté aux formulaires de contrôle qualité et d'inspection chantier.` },
     { tags: ['cerfa', 'officiel', 'document officiel', 'administratif'], response: `Vous pouvez importer n'importe quel PDF, y compris des documents officiels ou CERFA, et y ajouter des champs numériques.` },
-  ];
-
+    /* ── QUESTIONS HUGO ── */
+    { tags: ['hugo beau', 'est beau', 'hugo est beau'], response: `D'après certaines sources totalement objectives… oui.` },
+    { tags: ['hugo tres beau', 'hugo très beau', 'très beau hugo', 'tres beau hugo'], response: `Disons qu'il ne passe pas inaperçu.` },
+    { tags: ['plus beau', 'le plus beau', 'hugo plus beau'], response: `Je ne veux pas créer de débat international, mais il est bien placé.` },
+    { tags: ['gigachad', 'giga chad', 'hugo gigachad'], response: `Je laisse internet juger… mais certains indices vont dans ce sens.` },
+    { tags: ['hugo génie', 'hugo genie', 'genie hugo', 'génie hugo'], response: `Génie ou simplement très motivé ? Le débat reste ouvert.` },
+    { tags: ['hugo boss', 'le boss', 'hugo le boss'], response: `Officiellement non… officieusement peut-être un peu.` },
+    { tags: ['hugo riche', 'riche hugo', 'millionnaire hugo'], response: `Pas encore milliardaire, mais il y travaille.` },
+    { tags: ['hugo legende', 'hugo légende', 'légende hugo'], response: `Certaines personnes commencent déjà à le dire.` },
+    { tags: ['hugo goat', 'goat hugo', 'le goat'], response: `Je ne peux ni confirmer ni infirmer cette théorie.` },
+    { tags: ['hugo trop fort', 'trop fort hugo', 'fort hugo'], response: `Il se défend plutôt bien.` },
+    { tags: ['hugo sigma', 'sigma hugo'], response: `Certains diraient qu'il a un petit côté indépendant.` },
+    { tags: ['hugo dort', 'dort hugo', 'hugo dormir'], response: `Apparemment oui… mais rarement.` },
+    { tags: ['hugo travaille', 'travaille hugo', 'hugo tout le temps'], response: `Disons qu'il aime bien construire des projets.` },
+    { tags: ['hugo machine', 'machine hugo', 'hugo cyborg'], response: `Je confirme qu'il est humain… normalement.` },
+    { tags: ['hugo conquérir', 'conquérir monde hugo', 'hugo monde'], response: `Peut-être pas aujourd'hui… mais il a des idées.` },
+    { tags: ['hugo stylé', 'trop stylé hugo', 'hugo style'], response: `Je dirais qu'il a son style.` },
+    { tags: ['hugo héros', 'hugo heros', 'héros hugo'], response: `Chaque projet a ses héros… Hugo en fait peut-être partie.` },
+    { tags: ['hugo super pouvoir', 'super pouvoirs hugo', 'pouvoir hugo'], response: `Peut-être celui de transformer des idées en projets.` },
+    { tags: ['hugo dangereux', 'dangereux hugo'], response: `Seulement pour la concurrence.` },
+    { tags: ['hugo personnage principal', 'personnage principal hugo', 'hugo protagoniste'], response: `Dans certaines histoires… oui.` },
   ];
 
   /* ── QUICK REPLIES ── */
