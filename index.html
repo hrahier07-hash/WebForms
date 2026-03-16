@@ -1615,6 +1615,10 @@ document.querySelectorAll('.fbv').forEach(el=>pObs.observe(el));
         <label style="display:block;font-size:13px;font-weight:500;color:#111827;margin-bottom:6px">Numéro de téléphone <span style="color:#3282DE">*</span></label>
         <input id="r-tel" type="tel" placeholder="06 12 34 56 78" style="width:100%;padding:10px 13px;border:1.5px solid #E4E4E7;border-radius:8px;font-size:14px;font-family:'IBM Plex Sans',sans-serif;outline:none;transition:border-color .15s;color:#111827" onfocus="this.style.borderColor='#3282DE'" onblur="this.style.borderColor='#E4E4E7'">
       </div>
+      <div style="margin-bottom:14px">
+        <label style="display:block;font-size:13px;font-weight:500;color:#111827;margin-bottom:6px">Email <span style="color:#3282DE">*</span></label>
+        <input id="r-email" type="email" placeholder="jean@entreprise.fr" style="width:100%;padding:10px 13px;border:1.5px solid #E4E4E7;border-radius:8px;font-size:14px;font-family:'IBM Plex Sans',sans-serif;outline:none;transition:border-color .15s;color:#111827" onfocus="this.style.borderColor='#3282DE'" onblur="this.style.borderColor='#E4E4E7'">
+      </div>
       <div style="margin-bottom:22px">
         <label style="display:block;font-size:13px;font-weight:500;color:#111827;margin-bottom:6px">Message <span style="font-size:12px;font-weight:400;color:#9ca3af">(optionnel)</span></label>
         <textarea id="r-msg" placeholder="Dites-nous en plus sur votre activité ou vos besoins..." style="width:100%;padding:10px 13px;border:1.5px solid #E4E4E7;border-radius:8px;font-size:14px;font-family:'IBM Plex Sans',sans-serif;outline:none;transition:border-color .15s;color:#111827;resize:vertical;min-height:90px;line-height:1.55" onfocus="this.style.borderColor='#3282DE'" onblur="this.style.borderColor='#E4E4E7'"></textarea>
@@ -1666,6 +1670,7 @@ function closeRappel(){
   document.getElementById('r-prenom').value='';
   document.getElementById('r-nom').value='';
   document.getElementById('r-tel').value='';
+  document.getElementById('r-email').value='';
   document.getElementById('r-msg').value='';
   document.getElementById('r-error').style.display='none';
 }
@@ -1673,17 +1678,19 @@ function sendRappel(){
   var p=document.getElementById('r-prenom').value.trim(),
       n=document.getElementById('r-nom').value.trim(),
       t=document.getElementById('r-tel').value.trim(),
+      e=document.getElementById('r-email').value.trim(),
       m=document.getElementById('r-msg').value.trim(),
       err=document.getElementById('r-error');
-  if(!p||!n||!t){err.textContent='Veuillez remplir les champs obligatoires.';err.style.display='block';return;}
+  if(!p||!n||!t||!e){err.textContent='Veuillez remplir les champs obligatoires.';err.style.display='block';return;}
   if(!/^[0-9+\s().\-]{6,20}$/.test(t)){err.textContent='Num\u00e9ro de t\u00e9l\u00e9phone invalide.';err.style.display='block';return;}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){err.textContent='Adresse email invalide.';err.style.display='block';return;}
   err.style.display='none';
   var btn=document.getElementById('r-btn');
   btn.textContent='Envoi en cours\u2026';btn.style.opacity='.7';btn.disabled=true;
   fetch('/api/rappel',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({prenom:p,nom:n,tel:t,message:m})
+    body:JSON.stringify({prenom:p,nom:n,tel:t,email:e,message:m})
   })
   .then(function(r){return r.json()})
   .then(function(data){
