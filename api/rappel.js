@@ -6,9 +6,9 @@ module.exports = async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
-  const { prenom, nom, tel, message } = req.body || {};
+  const { prenom, nom, tel, email, message } = req.body || {};
 
-  if (!prenom || !nom || !tel) {
+  if (!prenom || !nom || !tel || !email) {
     return res.status(400).json({ error: 'Champs obligatoires manquants' });
   }
 
@@ -47,6 +47,12 @@ module.exports = async function handler(req, res) {
                   <td style="padding: 12px 0; border-bottom: 1px solid #e4e4e7; font-size: 13px; color: #6b7280; font-weight: 500;">Téléphone</td>
                   <td style="padding: 12px 0; border-bottom: 1px solid #e4e4e7; font-size: 14px; color: #111827; font-weight: 600;">
                     <a href="tel:${tel.replace(/\s/g, '')}" style="color: #3282DE; text-decoration: none;">${tel}</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px 0; border-bottom: 1px solid #e4e4e7; font-size: 13px; color: #6b7280; font-weight: 500;">Email</td>
+                  <td style="padding: 12px 0; border-bottom: 1px solid #e4e4e7; font-size: 14px; color: #111827; font-weight: 600;">
+                    <a href="mailto:${email}" style="color: #3282DE; text-decoration: none;">${email}</a>
                   </td>
                 </tr>
                 ${message ? `
