@@ -13,7 +13,6 @@ module.exports = async function handler(req, res) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const fromEmail = 'BTPForms <onboarding@resend.dev>';
 
   try {
     const response = await fetch('https://api.resend.com/emails', {
@@ -23,7 +22,7 @@ module.exports = async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: fromEmail,
+        from: 'BTPForms <hello@btpforms.com>',
         to: ['hugo@astrova.fr', 'thibaud@astrova.fr'],
         subject: `📞 Demande de rappel — ${prenom} ${nom}`,
         html: `
