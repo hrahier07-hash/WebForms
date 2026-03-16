@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Centre d'aide — BTPForms</title>
-<link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAAgACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABAABAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAC79WJGwqiEXkHbnof/9oADAMBAAIAAwAAACGlXvf/2gAMAwEAAgADAAAAEO97Nv/EABkRAQADAQEAAAAAAAAAAAAAAAEAAhIxEf/aAAgBAgEBPwAF5ETsrbMvfT7P/8QAGREBAAMBAQAAAAAAAAAAAAAAAQACETES/9oACAEDAQE/AFDsEeSxsrXyZP/EACcQAAIABAUCBwAAAAAAAAAAAAECAAMREgQQITFBE1EiMkJSYXFy/9oACAEBAAE/AoZlRbmYKO5gGoqNs2veb1Cb1U6JqKGp7QCZQWhtBPk35pz95yPXW6hZtq+5oe61GbTxqAD+hm2Fw7tc0iUSeSghcNIlmqSZan4XL//EAB0QAQACAgMBAQAAAAAAAAAAAAERIQAQMUFRYYH/2gAIAQEAAT8hx0I8rAYBIKsTvYvE5EAKaM8d5MYDAYQhWJ2j56HuPL8yiW4N393zaDlsguESjhMdf//EABwQAQACAgMBAAAAAAAAAAAAAAERIQAQMUFRcf/aAAgBAQABPxDOG9e3ItaLwL6iUgeEezYSg8wVfVMEgSeyGcoVOMwEogQCdlbSGECUiSFuU4JacuFzEtGA+fNv4aXg9VJc4oXJviGv//4AAwD/2Q==">
+<link rel="icon" type="image/png" href="/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 <style>
@@ -505,7 +505,8 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
     <h1 class="pg-title">Centre d'aide</h1>
     <p class="pg-sub">Guides, tutoriels et réponses à toutes vos questions sur BTPForms.</p>
     <div style="margin-top:28px;max-width:480px">
-      <input type="text" class="f-inp" placeholder="🔍 Rechercher dans l'aide..." style="font-size:15px;padding:12px 16px">
+      <input type="text" id="aide-search" class="f-inp" placeholder="🔍 Rechercher dans l'aide..." style="font-size:15px;padding:12px 16px" onkeydown="if(event.key==='Enter')searchAide()">
+      <button onclick="searchAide()" style="margin-top:10px;background:var(--P);color:#fff;border:none;padding:10px 22px;border-radius:9px;font-size:14px;font-weight:600;cursor:pointer;font-family:'IBM Plex Sans',sans-serif">Rechercher</button>
     </div>
   </div>
 </div>
@@ -515,12 +516,12 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
     <h2 class="sec-h" style="margin-bottom:8px">Guides par catégorie</h2>
     <p class="sec-p">Trouvez rapidement la réponse à votre question.</p>
     <div class="aide-grid">
-      <a href="aide.html" class="aide-card"><div class="aide-ico">🚀</div><h3>Premiers pas</h3><p>Créer votre compte, configurer votre espace et publier votre premier formulaire.</p></a>
-      <a href="aide.html" class="aide-card"><div class="aide-ico">📄</div><h3>Templates & Builder</h3><p>Importer un PDF, poser des champs, configurer les propriétés.</p></a>
-      <a href="aide.html" class="aide-card"><div class="aide-ico">📥</div><h3>Soumissions</h3><p>Consulter, filtrer, éditer et exporter vos soumissions en PDF.</p></a>
-      <a href="aide.html" class="aide-card"><div class="aide-ico">👥</div><h3>Membres & accès</h3><p>Inviter des collaborateurs, gérer les rôles et les permissions.</p></a>
-      <a href="aide.html" class="aide-card"><div class="aide-ico">🔗</div><h3>App connexions</h3><p>Connecter vos outils SaaS pour le pré-remplissage automatique.</p></a>
-      <a href="aide.html" class="aide-card"><div class="aide-ico">💳</div><h3>Facturation & packs</h3><p>Changer de pack, comprendre votre facture, appliquer un code promo.</p></a>
+      <a href="fonctionnalites-templates.html" class="aide-card"><div class="aide-ico">🚀</div><h3>Premiers pas</h3><p>Créer votre compte, configurer votre espace et publier votre premier formulaire.</p></a>
+      <a href="fonctionnalites-builder.html" class="aide-card"><div class="aide-ico">📄</div><h3>Templates & Builder</h3><p>Importer un PDF, poser des champs, configurer les propriétés.</p></a>
+      <a href="fonctionnalites-soumissions.html" class="aide-card"><div class="aide-ico">📥</div><h3>Soumissions</h3><p>Consulter, filtrer, éditer et exporter vos soumissions en PDF.</p></a>
+      <a href="fonctionnalites-membres.html" class="aide-card"><div class="aide-ico">👥</div><h3>Membres & accès</h3><p>Inviter des collaborateurs, gérer les rôles et les permissions.</p></a>
+      <a href="fonctionnalites-app-connexions.html" class="aide-card"><div class="aide-ico">🔗</div><h3>App connexions</h3><p>Connecter vos outils SaaS pour le pré-remplissage automatique.</p></a>
+      <a href="index.html#pricing" class="aide-card"><div class="aide-ico">💳</div><h3>Facturation & packs</h3><p>Changer de pack, comprendre votre facture, appliquer un code promo.</p></a>
     </div>
   </div>
 </section>
@@ -617,6 +618,36 @@ const nav=document.getElementById('nav');
 function upNav(){nav.classList.toggle('sc',window.scrollY>20)}
 upNav();window.addEventListener('scroll',upNav,{passive:true});
 function faq(btn){const it=btn.closest('.fi'),op=it.classList.contains('op');document.querySelectorAll('.fi.op').forEach(i=>i.classList.remove('op'));if(!op)it.classList.add('op');}
+function searchAide(){
+  var q=document.getElementById('aide-search').value.toLowerCase().trim();
+  if(!q)return;
+  var pages=[
+    {url:'fonctionnalites-templates.html',keywords:['template','pdf','upload','importer','modele','modèle','formulaire','créer','créer']},
+    {url:'fonctionnalites-builder.html',keywords:['builder','champ','glisser','déposer','visuel','construire','poser','field']},
+    {url:'fonctionnalites-formulaires.html',keywords:['formulaire','publier','publié','lien','public','remplir','partager']},
+    {url:'fonctionnalites-signatures.html',keywords:['signature','signer','paraphe','pad','sign']},
+    {url:'fonctionnalites-soumissions.html',keywords:['soumission','export','pdf','filtrer','editer','éditer','télécharger','download','historique']},
+    {url:'fonctionnalites-membres.html',keywords:['membre','collaborateur','role','rôle','invitation','permission','équipe','equipe','acces','accès']},
+    {url:'fonctionnalites-workspaces.html',keywords:['workspace','espace','travail','projet','organisation']},
+    {url:'fonctionnalites-app-connexions.html',keywords:['connexion','integration','intégration','saas','outil','connecter','api','webhook']},
+    {url:'usages-suivi-chantier.html',keywords:['chantier','suivi','rapport','compte rendu']},
+    {url:'usages-pv-reception.html',keywords:['pv','réception','reception','procès verbal','proces verbal']},
+    {url:'usages-securite.html',keywords:['securite','sécurité','permis','epi','conformité','conformite']},
+    {url:'usages-presence.html',keywords:['presence','présence','feuille','heures','pointage']},
+    {url:'usages-logistique.html',keywords:['logistique','livraison','bon','transport']},
+    {url:'index.html#pricing',keywords:['tarif','prix','pack','facturation','facture','abonnement','starter','avancé','entreprise','paiement','promo']},
+    {url:'contact.html',keywords:['contact','support','aide','question','problème','probleme','bug','assistance']},
+    {url:'legal.html',keywords:['legal','légal','cgv','cgu','confidentialite','confidentialité','mentions','rgpd','données','données']}
+  ];
+  var best=null,bestScore=0;
+  pages.forEach(function(p){
+    var score=0;
+    p.keywords.forEach(function(k){if(q.includes(k)||k.includes(q))score++;});
+    if(score>bestScore){bestScore=score;best=p.url;}
+  });
+  if(best&&bestScore>0){window.location.href=best;}
+  else{alert('Aucune page trouvée pour "'+q+'". Essayez un autre mot-clé.');}
+}
 </script>
 
 <div id="modal-rappel" style="display:none;position:fixed;inset:0;z-index:99000;background:rgba(6,6,14,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:20px">
