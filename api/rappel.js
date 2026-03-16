@@ -13,7 +13,7 @@ module.exports = async function handler(req, res) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const fromEmail = process.env.RESEND_FROM_EMAIL || 'BTPForms <hello@btpforms.com>';
+  const fromEmail = 'BTPForms <onboarding@resend.dev>';
 
   try {
     const response = await fetch('https://api.resend.com/emails', {
