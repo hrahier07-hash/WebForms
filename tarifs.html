@@ -931,7 +931,7 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
     <div class="fi"><div class="fq" onclick="faq(this)"><h3>Comment fonctionne la réduction annuelle ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>En choisissant l'engagement annuel, vous économisez 20% : Starter à 15€/mois, Avancé à 39€/mois, Entreprise à 79€/mois. Facturé en une fois pour l'année.</p></div></div>
     <div class="fi"><div class="fq" onclick="faq(this)"><h3>Les prix incluent-ils la TVA ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Non, tous les prix sont HT. La TVA applicable sera ajoutée lors de la facturation.</p></div></div>
     <div class="fi"><div class="fq" onclick="faq(this)"><h3>Puis-je résilier à tout moment ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Oui, sans condition pour le mensuel. Pour l'annuel, la résiliation prend effet à la fin de la période payée. Vos données restent accessibles 12 mois après résiliation.</p></div></div>
-    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Besoin d'un devis personnalisé ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Pour les grandes structures, contactez-nous à <a href="mailto:hugo@astrova.fr" style="color:var(--P)">hugo@astrova.fr</a>.</p></div></div>
+    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Besoin d'un devis personnalisé ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Pour les grandes structures, contactez-nous à <a href="/cdn-cgi/l/email-protection#ed85988a82ad8c9e999f829b8cc38b9f" style="color:var(--P)"><span class="__cf_email__" data-cfemail="fd95889a92bd9c8e898f928b9cd39b8f">[email&#160;protected]</span></a>.</p></div></div>
   </div>
 </div>
 </section>
@@ -1005,11 +1005,13 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
 </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const nav=document.getElementById('nav');
 function upNav(){nav.classList.toggle('sc',window.scrollY>20)}
 upNav();window.addEventListener('scroll',upNav,{passive:true});
 function faq(btn){const it=btn.closest('.fi'),op=it.classList.contains('op');document.querySelectorAll('.fi.op').forEach(i=>i.classList.remove('op'));if(!op)it.classList.add('op');}
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 const prices={m:{s:'19€',a:'49€',e:'99€'},a:{s:'15€',a:'39€',e:'79€'}};
 function setToggle(mode){
   document.getElementById('tb-m').classList.toggle('act',mode==='m');
@@ -1207,15 +1209,4 @@ function mmToggle(btn){
     startX=e.pageX - track.offsetLeft; scrollLeft=track.scrollLeft;
   });
   track.addEventListener('mouseleave',function(){isDown=false;track.classList.remove('dragging')});
-  track.addEventListener('mouseup',function(){isDown=false;track.classList.remove('dragging')});
-  track.addEventListener('mousemove',function(e){
-    if(!isDown)return; e.preventDefault();
-    var x=e.pageX - track.offsetLeft;
-    track.scrollLeft = scrollLeft - (x - startX)*1.2;
-  });
-})();
-</script>
-
-
-</body>
-</html>
+  track.addEventListener('mouseup',function(){isDown=false;track.classList.remove('dra
