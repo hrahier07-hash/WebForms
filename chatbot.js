@@ -217,6 +217,99 @@
     { tags: ['hugo super pouvoir', 'super pouvoirs hugo', 'pouvoir hugo'], response: `Peut-être celui de transformer des idées en projets.` },
     { tags: ['hugo dangereux', 'dangereux hugo'], response: `Seulement pour la concurrence.` },
     { tags: ['hugo personnage principal', 'personnage principal hugo', 'hugo protagoniste'], response: `Dans certaines histoires… oui.` },
+
+  /* ── BLOC Q&R ÉTENDU — PRÉSENTATION & IDENTITÉ ── */
+  { tags: ['btpforms quoi','c est quoi btpforms','btpforms kesako','presentation btpforms','qu est ce que btpforms','btpforms presentation','btpforms definition','btpforms outil','btpforms plateforme','btpforms solution'], response: `BTPForms est une application qui permet aux entreprises du BTP de créer des formulaires numériques pour le terrain : rapports de chantier, checklists sécurité, fiches d'intervention, contrôles qualité, etc.` },
+  { tags: ['sert a quoi btpforms','utilite btpforms','utilité btpforms','a quoi sert','pourquoi btpforms','interet btpforms','avantage btpforms','besoin btpforms'], response: `BTPForms sert à remplacer les formulaires papier sur les chantiers par des formulaires numériques remplis sur smartphone ou tablette.` },
+  { tags: ['pour qui btpforms','qui utilise btpforms','cible btpforms','profil utilisateur btpforms','entreprise btpforms','artisan btpforms','conducteur travaux btpforms','chef chantier btpforms'], response: `BTPForms est conçu pour les entreprises du BTP : artisans, PME, conducteurs de travaux, chefs de chantier et équipes terrain.` },
+  { tags: ['btpforms btp','pour btp','secteur btp','btp application','batiment travaux publics','construction formulaire'], response: `Oui, BTPForms est spécialement conçu pour les entreprises du bâtiment et des travaux publics.` },
+  { tags: ['btpforms chantier','application chantier','outil chantier numerique','solution chantier','app terrain','appli terrain'], response: `Oui, BTPForms est une application utilisée directement sur chantier pour remplir des formulaires et des rapports.` },
+  { tags: ['btpforms entreprise','digitalisation btp','numerique btp','transformation numerique btp','digital terrain'], response: `BTPForms aide les entreprises du BTP à digitaliser leurs processus terrain.` },
+  { tags: ['logiciel chantier','outil chantier','logiciel btp','outil btp','logiciel terrain','outil terrain','software btp'], response: `BTPForms est un outil numérique qui simplifie la gestion des formulaires et rapports sur chantier.` },
+  { tags: ['remplacer papier','supprimer papier','fin papier','papier numerique','dematérialiser papier','dematerialiser papier','zero papier chantier'], response: `BTPForms permet de remplacer les documents papier par des formulaires numériques remplis directement sur téléphone.` },
+  { tags: ['gestion formulaires','gérer formulaires','administrer formulaires','organiser formulaires','formulaires chantier gestion'], response: `BTPForms permet de créer, remplir et gérer des formulaires chantier en quelques minutes.` },
+
+  /* ── TYPES DE FORMULAIRES ── */
+  { tags: ['formulaire chantier','rapport chantier','compte rendu chantier','rapport terrain','fiche chantier','document chantier'], response: `Avec BTPForms vous pouvez créer des rapports de chantier numériques remplis directement par les équipes terrain.` },
+  { tags: ['checklist chantier','liste controle','check list','liste verification','inspection checklist','audit list'], response: `BTPForms permet de créer des checklists de sécurité, de contrôle ou de vérification sur chantier.` },
+  { tags: ['rapport intervention','cr intervention','compte rendu intervention','fiche cr intervention'], response: `Les équipes peuvent remplir un rapport d'intervention directement depuis leur téléphone.` },
+  { tags: ['fiche intervention','fiche mission','fiche travaux','intervention terrain'], response: `BTPForms permet de générer des fiches d'intervention complètes avec photos et signatures.` },
+  { tags: ['rapport quotidien','rapport journalier','daily report','rapport du jour','bilan journalier chantier'], response: `Vous pouvez créer des rapports journaliers de chantier avec BTPForms.` },
+  { tags: ['formulaire securite','formulaire hse','hse chantier','securite travail formulaire','document securite'], response: `BTPForms permet de créer des formulaires sécurité et contrôle HSE.` },
+  { tags: ['audit chantier','inspection chantier','visite chantier','audit terrain','inspection site'], response: `BTPForms peut être utilisé pour réaliser des audits et inspections de chantier.` },
+  { tags: ['controle qualite','contrôle qualité','qualite formulaire','fiche qualite','inspection qualite','autocontrole'], response: `Vous pouvez créer des formulaires de contrôle qualité pour vos chantiers.` },
+
+  /* ── FONCTIONNALITÉS SPÉCIFIQUES ── */
+  { tags: ['photos formulaire','ajouter photo','photo chantier','photo terrain','image formulaire','prendre photo'], response: `Les formulaires BTPForms permettent d'ajouter des photos directement depuis le téléphone.` },
+  { tags: ['signature formulaire','signer document','signature numerique','signer electroniquement','esignature','e signature'], response: `Vous pouvez ajouter une signature directement dans un formulaire.` },
+  { tags: ['gps chantier','geolocalisation','localisation formulaire','position gps','coords gps'], response: `BTPForms peut enregistrer la position GPS lors du remplissage d'un formulaire.` },
+  { tags: ['horodatage','horodater','timestamp','date heure automatique','heure remplissage'], response: `Chaque formulaire peut être horodaté automatiquement.` },
+  { tags: ['export pdf','formulaire pdf','generer pdf','pdf automatique','telecharger pdf','pdf soumission'], response: `Les formulaires remplis peuvent être exportés en PDF.` },
+  { tags: ['creer formulaire','creation formulaire','faire formulaire','nouveau formulaire','construire formulaire','builder formulaire'], response: `Vous pouvez créer des formulaires personnalisés très facilement.` },
+  { tags: ['modifier formulaire','editer formulaire','changer formulaire','mettre jour formulaire','update formulaire'], response: `Les formulaires peuvent être modifiés à tout moment.` },
+  { tags: ['mode hors ligne','sans internet formulaire','offline mode','remplir sans connexion','hors connexion'], response: `Les formulaires peuvent être remplis même sans connexion internet.` },
+  { tags: ['historique formulaires','archive formulaires','anciens formulaires','voir formulaires passes','retrouver formulaires'], response: `Tous les formulaires remplis sont enregistrés dans l'historique.` },
+
+  /* ── COMPATIBILITÉ MOBILE / APPAREILS ── */
+  { tags: ['application mobile','appli mobile','app mobile','mobile btpforms','version mobile'], response: `BTPForms fonctionne parfaitement sur smartphone et tablette.` },
+  { tags: ['telephone chantier','utiliser telephone','remplir telephone','mobile chantier','smartphone chantier'], response: `Les équipes peuvent utiliser BTPForms directement sur leur téléphone.` },
+  { tags: ['android iphone','android ou iphone','ios android','compatible android','compatible iphone','apple android'], response: `BTPForms fonctionne sur Android et iPhone.` },
+  { tags: ['tablette chantier','ipad chantier','tablette formulaire','remplir tablette'], response: `Les tablettes peuvent être utilisées pour remplir les formulaires.` },
+  { tags: ['connexion requise','besoin connexion','internet obligatoire','sans connexion formulaire'], response: `Même sans connexion internet, les formulaires peuvent être remplis.` },
+
+  /* ── TARIFS & ABONNEMENTS ── */
+  { tags: ['tarif btpforms','prix btpforms','cout btpforms','combien coute btpforms','tarification btpforms','grille tarifaire'], response: `Les tarifs BTPForms commencent à 19€/mois (Starter), 49€/mois (Avancé) ou 99€/mois (Entreprise). 7 jours d'essai gratuit sans CB.` },
+  { tags: ['essai gratuit btpforms','tester gratuitement','period essai','free trial','tester btpforms','accès gratuit'], response: `Oui, un essai gratuit de 7 jours est disponible pour tester l'application, sans carte bancaire.` },
+  { tags: ['abonnement btpforms','souscrire btpforms','payer btpforms','facturation btpforms','souscription'], response: `BTPForms fonctionne avec un abonnement mensuel ou annuel (−20%) adapté à la taille de votre entreprise.` },
+  { tags: ['nombre utilisateurs','combien utilisateurs','limite membres','ajouter equipe','utilisateurs illimites'], response: `Vous pouvez ajouter plusieurs utilisateurs. Le plan Avancé et Entreprise offrent des créateurs illimités.` },
+
+  /* ── SUPPORT & CONTACT ── */
+  { tags: ['support btpforms','aide btpforms','hotline btpforms','contacter support','service client btpforms'], response: `Vous pouvez contacter le support via le <a href="contact.html" style="color:#3282DE;text-decoration:underline">formulaire de contact</a> du site. Réponse sous 24h.` },
+  { tags: ['comment contacter btpforms','joindre equipe','contacter equipe','envoyer message btpforms','email btpforms'], response: `Vous pouvez nous contacter via le formulaire de contact du site ou demander un rappel téléphonique.` },
+  { tags: ['probleme application','bug app','erreur app','app ne fonctionne pas','site probleme','probleme site'], response: `Si vous avez un problème, contactez le support via la page contact. Nous répondons sous 24h.` },
+
+  /* ── SALUTATIONS & SOCIAL ── */
+  { tags: ['ça va bien','ca va bien','vous allez bien','vous allez comment','comment tu vas'], response: `Oui merci 🙂 Comment puis-je vous aider concernant BTPForms ?` },
+  { tags: ['quoi de neuf','news btpforms','actualite btpforms','quoi de nouveau','quoi ca'], response: `Je suis là pour vous aider à découvrir BTPForms. Que voulez-vous savoir ?` },
+  { tags: ['bonsoir','bonjour equipe','salutation','bjr','bsr'], response: `Bonjour 👋 Comment puis-je vous aider aujourd'hui ?` },
+  { tags: ['yo','wesh','cc','coucou','hi btpforms'], response: `Salut ! Vous voulez en savoir plus sur BTPForms ?` },
+  { tags: ['hey','good morning','good day','hiya'], response: `Hello ! Comment puis-je vous aider ?` },
+  { tags: ['merci beaucoup','merci bien','thanks','thank you','grand merci'], response: `Avec plaisir 🙂` },
+  { tags: ['bonne journee','bonne soiree','à bientot','a bientot','bonne continuation'], response: `Bonne journée à vous aussi !` },
+  { tags: ['tu es qui toi','qui es-tu','presentation toi','qui tu es','c est qui le bot'], response: `Je suis l'assistant du site BTPForms.` },
+  { tags: ['tu es robot','etes vous robot','es tu un bot','chatbot btpforms','bot ou humain'], response: `Oui, je suis un assistant virtuel pour répondre aux questions sur BTPForms.` },
+  { tags: ['tu es ia','es tu ia','ai chatbot','intelligence artificielle chatbot','bot ia'], response: `Je suis un chatbot conçu pour aider les visiteurs du site.` },
+
+  /* ── QUESTIONS FUN ── */
+  { tags: ['tu es beau','beau chatbot','sympa le bot','joli assistant'], response: `Merci 😄 Mais je suis surtout là pour vous aider avec BTPForms.` },
+  { tags: ['tu es intelligent','bot intelligent','chatbot malin','super bot'], response: `J'essaie surtout d'être utile !` },
+  { tags: ['tu es humain','es tu humain','vrai humain','personne reelle'], response: `Non, je suis un assistant virtuel.` },
+  { tags: ['tu dors','bot dort','il dort','pas dispo'], response: `Non, je suis disponible 24h/24.` },
+  { tags: ['tu es vivant','bot vivant','ia consciente','tu penses'], response: `Je suis un programme conçu pour aider les visiteurs du site.` },
+
+  /* ── SYNONYMES SUPPLÉMENTAIRES POUR GONFLER LA COUVERTURE ── */
+  { tags: ['digitaliser chantier','numeriser chantier','dématérialisation chantier','dematerialisation chantier','sans papier'], response: `BTPForms vous aide à digitaliser vos processus terrain et à supprimer le papier sur vos chantiers.` },
+  { tags: ['temps reel','notification temps reel','recu instantanement','pdf instantane','soumission instantanee'], response: `Oui, chaque soumission génère un PDF en temps réel, accessible immédiatement dans votre tableau de bord.` },
+  { tags: ['tableau de bord','dashboard','espace admin','interface admin','back office'], response: `Votre tableau de bord centralise tous vos formulaires, soumissions et statistiques en un seul endroit.` },
+  { tags: ['qr code imprimer','imprimer qr','plastifier qr','coller qr','afficher qr','qr code chantier'], response: `Chaque formulaire génère un QR code téléchargeable. Imprimez-le, plastifiez-le et collez-le sur site.` },
+  { tags: ['pas besoin compte terrain','compte ouvriers','ouvriers sans compte','equipe sans inscription'], response: `Vos équipes terrain n'ont pas besoin de compte BTPForms. Un lien ou QR code suffit.` },
+  { tags: ['soumissions illimitees','soumissions illimitées','formulaires illimites','illimité soumissions'], response: `Le plan Entreprise propose des soumissions illimitées chaque mois.` },
+  { tags: ['workspace multiple','plusieurs espaces','multi workspace','espace de travail multiple'], response: `Vous pouvez créer plusieurs espaces de travail pour séparer vos projets, chantiers ou activités.` },
+  { tags: ['integration logiciel','connecter logiciel','api logiciel','webhook btpforms','synchronisation'], response: `Les App connexions permettent de synchroniser BTPForms avec vos outils existants via API ou webhook.` },
+  { tags: ['cerfa btpforms','formulaire officiel','document reglementaire','conformite doc'], response: `Importez n'importe quel PDF officiel ou CERFA et ajoutez-y des champs numériques interactifs.` },
+  { tags: ['prise en main rapide','onboarding rapide','demarrer vite','operationnel rapidement','15 minutes'], response: `La prise en main prend moins de 15 minutes. Upload votre PDF, posez vos champs, publiez — c'est tout.` },
+  { tags: ['artisan btpforms','artisan numerique','artisan tablette','petit chantier btpforms'], response: `BTPForms est idéal pour les artisans qui veulent un outil simple, rapide et sans infrastructure complexe.` },
+  { tags: ['grand chantier','gros chantier','chantier important','grand projet btp'], response: `BTPForms s'adapte aussi bien aux petits chantiers qu'aux grands projets multi-équipes.` },
+  { tags: ['sous traitant','sous-traitant','prestataire chantier','co-traitant'], response: `Vos sous-traitants peuvent remplir vos formulaires via lien ou QR code, sans créer de compte.` },
+  { tags: ['mot de passe formulaire','formulaire prive','acces restreint','formulaire protege'], response: `Vous pouvez protéger un formulaire par mot de passe pour en restreindre l'accès.` },
+  { tags: ['sauvegarder automatiquement','sauvegarde auto','auto save','brouillon formulaire'], response: `Les soumissions sont sauvegardées automatiquement dès leur envoi.` },
+  { tags: ['relancer','rappel remplissage','notifier equipe','alerte soumission'], response: `Vous pouvez partager de nouveau le lien ou QR code pour relancer vos équipes.` },
+  { tags: ['nombre formulaires','combien formulaires possibles','limite formulaires','max formulaires'], response: `Il n'y a pas de limite sur le nombre de formulaires créés. Les limites portent uniquement sur les soumissions mensuelles.` },
+  { tags: ['export csv','export excel','exporter donnees','extraction donnees','data export'], response: `Les données de soumissions sont exportables en PDF. Un export CSV/Excel est prévu dans les prochaines versions.` },
+  { tags: ['multi langue','anglais btpforms','langue formulaire','traduction formulaire'], response: `Les formulaires peuvent être rédigés dans la langue de votre choix selon vos besoins.` },
+  { tags: ['logo entreprise','personnalisation logo','branding formulaire','couleur formulaire','identite visuelle'], response: `Vous pouvez personnaliser vos formulaires avec votre logo et vos couleurs d'entreprise.` },
+  { tags: ['notification email','alerte email','email soumission','notif soumission'], response: `Vous pouvez être notifié par email à chaque nouvelle soumission.` },
+  { tags: ['archiver formulaire','archivage formulaire','garder historique','conservation formulaires'], response: `Toutes les soumissions sont archivées indéfiniment dans votre espace, filtrables par date.` },
   ];
 
   /* ── QUICK REPLIES ── */
@@ -230,91 +323,17 @@
   ];
 
   /* ── MATCHING ── */
-
-  // Normalisation : minuscules, sans accents, sans ponctuation
-  function normalizeText(str) {
-    return (str || '')
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^\w\s]/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-  }
-
-  // Table de synonymes (clé = tag canonique)
-  const SYNONYMS = {
-    prix:       ['tarif', 'cout', 'combien', 'abonnement', 'payer', 'forfait'],
-    test:       ['essai', 'demo', 'tester', 'gratuit', 'trial'],
-    telephone:  ['mobile', 'tel', 'smartphone', 'iphone', 'android'],
-    formulaire: ['form', 'fiche', 'document', 'modele'],
-    contact:    ['support', 'email', 'joindre', 'aide', 'parler'],
-    connexion:  ['integration', 'api', 'connecter', 'synchroniser'],
-    securite:   ['rgpd', 'protection', 'confidentiel', 'safe'],
-    signature:  ['signer', 'emargement'],
-  };
-
-  // Distance de Levenshtein
-  function levenshtein(a, b) {
-    const matrix = [];
-    for (let i = 0; i <= b.length; i++) matrix[i] = [i];
-    for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
-    for (let i = 1; i <= b.length; i++) {
-      for (let j = 1; j <= a.length; j++) {
-        matrix[i][j] = b[i - 1] === a[j - 1]
-          ? matrix[i - 1][j - 1]
-          : Math.min(
-              matrix[i - 1][j - 1] + 1,
-              matrix[i][j - 1]     + 1,
-              matrix[i - 1][j]     + 1
-            );
-      }
-    }
-    return matrix[b.length][a.length];
-  }
-
-  // Similarité 0→1 entre deux mots
-  function wordSimilar(a, b) {
-    const maxLen = Math.max(a.length, b.length);
-    if (maxLen === 0) return 1;
-    return 1 - levenshtein(a, b) / maxLen;
-  }
-
-  // Score d'un item KB contre les mots de la saisie
-  function scoreMatch(inputWords, tags) {
-    let score = 0;
-    for (let tag of tags) {
-      tag = normalizeText(tag);
-      for (const word of inputWords) {
-        const sim = wordSimilar(word, tag);
-        if (sim === 1)        score += 3;   // correspondance exacte
-        else if (sim > 0.85)  score += 2;   // très proche (typo)
-        else if (sim > 0.75)  score += 1;   // approchant
-
-        // Bonus synonymes
-        if (SYNONYMS[tag]) {
-          for (const syn of SYNONYMS[tag]) {
-            if (wordSimilar(word, normalizeText(syn)) > 0.75) {
-              score += 1.5;
-            }
-          }
-        }
-      }
-    }
-    return score;
-  }
-
   function findAnswer(input) {
-    const normalized = normalizeText(input);
-    const words = normalized.split(' ').filter(w => w.length > 1);
+    const q = input.toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s]/g, ' ');
 
     let best = null, bestScore = 0;
     for (const item of KB) {
-      const score = scoreMatch(words, item.tags);
+      const score = item.tags.reduce((s, tag) => s + (q.includes(tag) ? 1 : 0), 0);
       if (score > bestScore) { bestScore = score; best = item; }
     }
-    // Seuil minimal pour éviter les faux positifs
-    if (bestScore < 1.5) return null;
+    if (bestScore === 0) return null;
     return best.response;
   }
 
