@@ -435,7 +435,6 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
     <div class="ni">
       <div class="nl">Ressources <svg class="nl-arr" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M1.5 3.5l3 3 3-3"/></svg></div>
       <div class="dd">
-        <a href="aide.html" class="dli"><div class="dico" style="background:#f7f7f9;border-radius:8px">📖</div><div><strong>Centre d'aide</strong><span class="dsub">Guides et tutoriels</span></div></a>
         <a href="contact.html" class="dli"><div class="dico" style="background:#f7f7f9;border-radius:8px">✉️</div><div><strong>Nous contacter</strong><span class="dsub">Réponse sous 24h</span></div></a>
       </div>
     </div>
@@ -494,7 +493,6 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
       <span class="mm-arr"><svg viewBox="0 0 10 10" fill="none" stroke="#374151" stroke-width="2"><path d="M1.5 3.5l3 3 3-3"/></svg></span>
     </button>
     <div class="mm-links">
-      <a href="aide.html" class="mm-link"><div class="mm-link-ico">📖</div><div><strong>Centre d'aide</strong><span>Guides et tutoriels</span></div></a>
       <a href="contact.html" class="mm-link"><div class="mm-link-ico">✉️</div><div><strong>Nous contacter</strong><span>Réponse sous 24h</span></div></a>
     </div>
   </div>
@@ -521,61 +519,234 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
       <button class="legal-tab" onclick="showTab('cookies',this)">Cookies</button>
     </div>
 
+    <!-- ══ CONFIDENTIALITÉ ══ -->
     <div id="tab-conf" class="legal-body">
       <h2>Politique de confidentialité</h2>
-      <p>BTPForms s'engage à protéger la vie privée de ses utilisateurs. Cette politique décrit comment nous collectons, utilisons et protégeons vos données personnelles.</p>
+      <p>Dernière mise à jour : mars 2026. ASTROVA, éditrice de BTPForms, s'engage à protéger les données personnelles de ses utilisateurs conformément au Règlement Général sur la Protection des Données (RGPD — Règlement UE 2016/679) et à la loi Informatique et Libertés du 6 janvier 1978 modifiée.</p>
+
+      <h2>Responsable du traitement</h2>
+      <p>ASTROVA — SASU au capital de 100 €<br>
+      Siège social : 200 rue de la Croix Nivert, 75015 Paris<br>
+      SIREN : 101 075 794 — RCS Paris<br>
+      Email : <a href="mailto:hugo@astrova.fr" style="color:var(--P)">hugo@astrova.fr</a></p>
+
       <h2>Données collectées</h2>
-      <p>Nous collectons les données suivantes lors de l'utilisation de BTPForms :</p>
-      <ul><li>Informations de compte : prénom, nom, adresse email, numéro de téléphone</li><li>Données d'usage : formulaires créés, soumissions, connexions</li><li>Données de facturation : informations nécessaires au traitement des paiements (via Stripe)</li></ul>
-      <h2>Utilisation des données</h2>
-      <p>Vos données sont utilisées exclusivement pour fournir le service BTPForms, améliorer nos fonctionnalités et vous contacter en cas de besoin. Nous ne revendons jamais vos données à des tiers.</p>
-      <h2>Hébergement</h2>
-      <p>Toutes les données sont hébergées sur Supabase avec des serveurs situés en Europe (Union Européenne), conformément au RGPD.</p>
-      <h2>Vos droits</h2>
-      <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et de portabilité de vos données. Pour exercer ces droits, contactez-nous à <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c2b2b0abb4a3a1bb82a0b6b2a4adb0afb1eca1adaf">[email&#160;protected]</a>.</p>
+      <p>Dans le cadre de l'utilisation de BTPForms, nous collectons les catégories de données suivantes :</p>
+      <ul>
+        <li><strong>Données d'identification</strong> : prénom, nom, adresse email, numéro de téléphone</li>
+        <li><strong>Données de connexion</strong> : adresse IP, logs de connexion, type de navigateur, système d'exploitation</li>
+        <li><strong>Données d'usage</strong> : formulaires créés, soumissions effectuées, fréquence d'utilisation, fonctionnalités utilisées</li>
+        <li><strong>Données de facturation</strong> : coordonnées de facturation, historique des paiements (les données de carte bancaire sont gérées exclusivement par Stripe — nous ne stockons aucune donnée bancaire)</li>
+        <li><strong>Données métier</strong> : contenu des formulaires et soumissions créés par l'utilisateur dans le cadre de son activité professionnelle</li>
+      </ul>
+
+      <h2>Finalités et bases légales</h2>
+      <ul>
+        <li><strong>Exécution du contrat</strong> : fourniture du service BTPForms, gestion de votre compte et de votre abonnement</li>
+        <li><strong>Obligation légale</strong> : conservation des données de facturation (10 ans conformément au Code de commerce)</li>
+        <li><strong>Intérêt légitime</strong> : amélioration du service, sécurité, prévention de la fraude, statistiques d'usage anonymisées</li>
+        <li><strong>Consentement</strong> : communications marketing (si vous y avez consenti)</li>
+      </ul>
+
+      <h2>Hébergement et sous-traitants</h2>
+      <p>Vos données sont traitées par des sous-traitants soigneusement sélectionnés :</p>
+      <ul>
+        <li><strong>Supabase</strong> (base de données et stockage) — serveurs situés en Union Européenne</li>
+        <li><strong>Vercel Inc.</strong> (hébergement du site) — certifié SOC 2, données traitées conformément au RGPD</li>
+        <li><strong>Stripe Inc.</strong> (paiements en ligne) — certifié PCI-DSS niveau 1</li>
+        <li><strong>Resend</strong> (envoi d'emails transactionnels)</li>
+      </ul>
+      <p>Aucun transfert de données hors Union Européenne n'est effectué sans garanties appropriées (clauses contractuelles types de la Commission européenne).</p>
+
       <h2>Durée de conservation</h2>
-      <p>Les données sont conservées pendant la durée de votre abonnement et 12 mois après la résiliation, sauf obligation légale contraire.</p>
+      <ul>
+        <li>Données de compte actif : pendant toute la durée de l'abonnement</li>
+        <li>Après résiliation : accès en lecture seule pendant 12 mois, puis suppression définitive</li>
+        <li>Données de facturation : 10 ans (obligation légale)</li>
+        <li>Logs de connexion : 12 mois</li>
+      </ul>
+
+      <h2>Vos droits</h2>
+      <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+      <ul>
+        <li><strong>Droit d'accès</strong> : obtenir une copie de vos données personnelles</li>
+        <li><strong>Droit de rectification</strong> : corriger des données inexactes ou incomplètes</li>
+        <li><strong>Droit à l'effacement</strong> : demander la suppression de vos données (« droit à l'oubli »)</li>
+        <li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré et lisible</li>
+        <li><strong>Droit d'opposition</strong> : vous opposer au traitement de vos données pour des finalités de prospection</li>
+        <li><strong>Droit à la limitation</strong> : demander la suspension temporaire du traitement</li>
+      </ul>
+      <p>Pour exercer ces droits, contactez-nous à <a href="mailto:hugo@astrova.fr" style="color:var(--P)">hugo@astrova.fr</a> ou <a href="mailto:thibaud@astrova.fr" style="color:var(--P)">thibaud@astrova.fr</a>. Nous nous engageons à répondre dans un délai d'un mois.</p>
+      <p>En cas de désaccord, vous pouvez introduire une réclamation auprès de la <strong>CNIL</strong> — Commission Nationale de l'Informatique et des Libertés (www.cnil.fr).</p>
+
+      <h2>Sécurité</h2>
+      <p>Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données : chiffrement des communications (HTTPS/TLS), contrôle d'accès strict, authentification sécurisée, sauvegardes régulières et surveillance des accès.</p>
     </div>
 
+    <!-- ══ CGV ══ -->
     <div id="tab-cgv" class="legal-body" style="display:none">
       <h2>Conditions Générales de Vente et d'Utilisation</h2>
-      <p>Les présentes CGV/CGU régissent l'utilisation de la plateforme BTPForms accessible à l'adresse btpforms.com.</p>
-      <h2>Accès au service</h2>
-      <p>BTPForms est accessible sous réserve de la création d'un compte et du respect des présentes conditions. L'accès est réservé aux professionnels du BTP.</p>
-      <h2>Abonnements et tarifs</h2>
-      <p>BTPForms propose trois packs : Starter (19€ HT/mois), Avancé (49€ HT/mois) et Entreprise (99€ HT/mois). Les tarifs sont facturés mensuellement en HT. Un engagement annuel est disponible avec une réduction de 20%.</p>
-      <h2>Essai gratuit</h2>
-      <p>Tout nouveau compte bénéficie d'un essai gratuit de 7 jours avec une limite de 50 soumissions. Aucune carte bancaire n'est requise pour l'essai.</p>
-      <h2>Résiliation</h2>
-      <p>Vous pouvez résilier votre abonnement à tout moment depuis votre tableau de bord. La résiliation prend effet à la fin de la période en cours.</p>
-      <h2>Propriété intellectuelle</h2>
-      <p>L'ensemble des éléments de la plateforme BTPForms (design, code, contenus) sont la propriété exclusive de BTPForms SAS. Toute reproduction non autorisée est interdite.</p>
+      <p>Les présentes CGV/CGU (ci-après « les Conditions ») régissent l'accès et l'utilisation de la plateforme BTPForms accessible à l'adresse <strong>btpforms.com</strong> et de l'application accessible à <strong>app.btpforms.com</strong>, édités par la société ASTROVA.</p>
+      <p>En créant un compte ou en utilisant le service, vous acceptez sans réserve les présentes Conditions.</p>
+
+      <h2>1. Éditeur du service</h2>
+      <p>ASTROVA — SASU au capital de 100 €<br>
+      SIREN : 101 075 794 — RCS Paris<br>
+      Siège social : 200 rue de la Croix Nivert, 75015 Paris<br>
+      Email : <a href="mailto:hugo@astrova.fr" style="color:var(--P)">hugo@astrova.fr</a></p>
+
+      <h2>2. Description du service</h2>
+      <p>BTPForms est une plateforme SaaS (Software as a Service) permettant aux professionnels du BTP de créer, publier et gérer des formulaires numériques à partir de leurs PDF existants, de collecter des soumissions terrain et d'exporter des PDF générés automatiquement.</p>
+
+      <h2>3. Accès au service et création de compte</h2>
+      <p>L'accès au service est réservé aux professionnels (personnes morales ou personnes physiques agissant dans le cadre de leur activité professionnelle). Vous devez être âgé d'au moins 18 ans et disposer de la capacité juridique pour contracter. La création d'un compte implique la fourniture d'informations exactes et à jour.</p>
+
+      <h2>4. Essai gratuit</h2>
+      <p>Tout nouveau compte bénéficie d'un essai gratuit de <strong>7 jours</strong> avec accès à toutes les fonctionnalités, dans la limite de 50 soumissions. Aucune carte bancaire n'est requise pour démarrer l'essai. À l'issue de la période d'essai, le compte passe automatiquement en mode lecture seule jusqu'à souscription d'un abonnement payant.</p>
+
+      <h2>5. Abonnements et tarifs</h2>
+      <p>BTPForms propose trois formules d'abonnement :</p>
+      <ul>
+        <li><strong>Pack Starter — 19 € HT/mois</strong> : 100 soumissions/mois, 1 espace de travail, 2 créateurs de formulaires</li>
+        <li><strong>Pack Avancé — 49 € HT/mois</strong> : 500 soumissions/mois, espaces de travail illimités, créateurs illimités</li>
+        <li><strong>Pack Entreprise — 99 € HT/mois</strong> : soumissions illimitées, stockage illimité, App connexions, API, support prioritaire</li>
+      </ul>
+      <p>Les tarifs sont exprimés hors taxes (HT). La TVA applicable est celle en vigueur au moment de la facturation. Un engagement annuel est disponible avec une réduction de 20% sur tous les plans.</p>
+
+      <h2>6. Facturation et paiement</h2>
+      <p>La facturation est mensuelle ou annuelle selon l'option choisie. Le paiement s'effectue par carte bancaire via le prestataire sécurisé Stripe. En cas d'échec de paiement, ASTROVA se réserve le droit de suspendre l'accès au service après relance. Les factures sont disponibles depuis votre espace client.</p>
+
+      <h2>7. Résiliation</h2>
+      <p>Vous pouvez résilier votre abonnement à tout moment depuis les paramètres de votre compte. La résiliation prend effet à la fin de la période d'abonnement en cours, sans remboursement au prorata. Après résiliation, vos données restent accessibles en lecture seule pendant 12 mois, puis sont définitivement supprimées.</p>
+
+      <h2>8. Obligations de l'utilisateur</h2>
+      <p>En utilisant BTPForms, vous vous engagez à :</p>
+      <ul>
+        <li>Ne pas utiliser le service à des fins illicites ou contraires aux présentes Conditions</li>
+        <li>Ne pas tenter de porter atteinte à la sécurité ou à l'intégrité du service</li>
+        <li>Ne pas partager vos identifiants avec des tiers non autorisés</li>
+        <li>Respecter les droits de propriété intellectuelle d'ASTROVA et des tiers</li>
+        <li>Vous conformer aux obligations légales applicables à votre activité, notamment en matière de protection des données personnelles collectées via les formulaires</li>
+      </ul>
+
+      <h2>9. Responsabilité des données collectées via les formulaires</h2>
+      <p>En tant qu'utilisateur de BTPForms, vous êtes responsable des données personnelles que vous collectez via vos formulaires auprès de vos propres clients ou équipes. ASTROVA agit en qualité de sous-traitant pour ces données. Vous vous engagez à informer les personnes concernées de la collecte de leurs données et à respecter les obligations du RGPD en tant que responsable de traitement.</p>
+
+      <h2>10. Disponibilité du service</h2>
+      <p>ASTROVA s'efforce d'assurer la disponibilité du service 24h/24, 7j/7, mais ne peut garantir une disponibilité sans interruption. Des maintenances planifiées peuvent être effectuées, de préférence en heures creuses, avec notification préalable. En cas d'interruption non planifiée, ASTROVA ne saurait être tenu responsable des préjudices indirects.</p>
+
+      <h2>11. Propriété intellectuelle</h2>
+      <p>L'ensemble des éléments constituant la plateforme BTPForms (code source, design, interface, contenus, marque, logo) sont la propriété exclusive d'ASTROVA — SASU immatriculée au RCS de Paris sous le numéro 101 075 794 — et sont protégés par les lois françaises et internationales relatives à la propriété intellectuelle. Toute reproduction, représentation, modification ou exploitation non expressément autorisée est interdite.</p>
+      <p>Les contenus (formulaires, PDFs) créés par l'utilisateur sur la plateforme restent la propriété exclusive de l'utilisateur.</p>
+
+      <h2>12. Limitation de responsabilité</h2>
+      <p>La responsabilité d'ASTROVA ne pourra être engagée qu'en cas de faute prouvée. En tout état de cause, la responsabilité d'ASTROVA est limitée au montant des sommes versées par l'utilisateur au cours des 12 derniers mois précédant le sinistre. ASTROVA ne saurait être responsable des dommages indirects, pertes de données, manque à gagner ou préjudices commerciaux.</p>
+
+      <h2>13. Droit applicable et juridiction compétente</h2>
+      <p>Les présentes Conditions sont soumises au droit français. En cas de litige, les parties s'efforceront de trouver une solution amiable. À défaut, le litige sera porté devant les tribunaux compétents du ressort de Paris.</p>
+
+      <h2>14. Modifications des Conditions</h2>
+      <p>ASTROVA se réserve le droit de modifier les présentes Conditions à tout moment. Les utilisateurs seront informés par email de toute modification substantielle. La poursuite de l'utilisation du service après notification vaut acceptation des nouvelles Conditions.</p>
     </div>
 
+    <!-- ══ MENTIONS LÉGALES ══ -->
     <div id="tab-mentions" class="legal-body" style="display:none">
       <h2>Mentions légales</h2>
-      <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, nous vous informons de l'identité des différents intervenants dans le cadre de sa réalisation.</p>
-      <h2>Éditeur</h2>
-      <p>BTPForms SAS<br>Capital social : 10 000 €<br>RCS : Paris B XXX XXX XXX<br>Siège social : Paris, France<br>Email : <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="294a46475d484a5d694b5d594f465b445a074a4644">[email&#160;protected]</a></p>
-      <h2>Directeur de publication</h2>
-      <p>Le directeur de publication est le représentant légal de BTPForms SAS.</p>
-      <h2>Hébergement</h2>
-      <p>Le site est hébergé par Vercel Inc. et les données par Supabase, avec des serveurs situés en Europe.</p>
+      <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique (LCEN) et du décret n° 2007-1527 du 24 octobre 2007, nous vous informons des éléments suivants.</p>
+
+      <h2>Éditeur du site</h2>
+      <p>
+        <strong>ASTROVA</strong><br>
+        Société par actions simplifiée unipersonnelle (SASU)<br>
+        Capital social : 100,00 €<br>
+        Siège social : 200 rue de la Croix Nivert, 75015 Paris<br>
+        SIREN : 101 075 794<br>
+        SIRET (siège) : 101 075 794 00012<br>
+        RCS Paris<br>
+        Numéro de TVA intracommunautaire : FR59101075794<br>
+        Code NAF / APE : 6201Z — Programmation informatique<br>
+        Date d'immatriculation : 11 février 2026<br>
+        Email : <a href="mailto:hugo@astrova.fr" style="color:var(--P)">hugo@astrova.fr</a> — <a href="mailto:thibaud@astrova.fr" style="color:var(--P)">thibaud@astrova.fr</a>
+      </p>
+
+      <h2>Directeur de la publication</h2>
+      <p>M. Thibaud Péan, Président d'ASTROVA, domicilié au 16 rue Charles Divry, 75014 Paris.</p>
+
+      <h2>Hébergement du site</h2>
+      <p>
+        <strong>Vercel Inc.</strong><br>
+        440 N Barranca Ave #4133, Covina, CA 91723, États-Unis<br>
+        Site : vercel.com<br>
+        Les données sont traitées conformément au RGPD grâce aux clauses contractuelles types.
+      </p>
+
+      <h2>Hébergement des données</h2>
+      <p>
+        <strong>Supabase, Inc.</strong><br>
+        970 Toa Payoh North, Singapour (serveurs UE)<br>
+        Site : supabase.com<br>
+        Les données sont hébergées sur des serveurs situés en Union Européenne (Frankfurt, Allemagne).
+      </p>
+
+      <h2>Traitement des paiements</h2>
+      <p>
+        <strong>Stripe, Inc.</strong><br>
+        354 Oyster Point Blvd, South San Francisco, CA 94080, États-Unis<br>
+        Site : stripe.com — Certifié PCI-DSS niveau 1<br>
+        ASTROVA ne stocke aucune donnée bancaire. Toutes les transactions sont gérées par Stripe.
+      </p>
+
       <h2>Propriété intellectuelle</h2>
-      <p>Tous les contenus présents sur btpforms.com (textes, images, logos, vidéos) sont protégés par le droit d'auteur. Toute reproduction, même partielle, est soumise à autorisation préalable.</p>
+      <p>L'ensemble des éléments du site btpforms.com — textes, graphismes, logos, images, vidéos, code source — sont la propriété exclusive d'ASTROVA et sont protégés par le droit d'auteur (Code de la propriété intellectuelle). Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, de ces éléments, par quelque moyen ou procédé que ce soit, est interdite sauf autorisation écrite préalable d'ASTROVA.</p>
+      <p>La marque « BTPForms » est utilisée sous la dénomination commerciale d'ASTROVA.</p>
+
+      <h2>Liens hypertextes</h2>
+      <p>La création de liens hypertextes vers btpforms.com est autorisée sans accord préalable pour tout site non commercial. ASTROVA se réserve le droit de demander la suppression d'un lien qu'elle jugerait non conforme à son objet.</p>
+
+      <h2>Litiges</h2>
+      <p>En cas de litige relatif à l'utilisation du site ou du service, les parties s'efforceront de résoudre leur différend à l'amiable. À défaut, le litige sera soumis aux tribunaux compétents de Paris.</p>
     </div>
 
+    <!-- ══ COOKIES ══ -->
     <div id="tab-cookies" class="legal-body" style="display:none">
       <h2>Politique de cookies</h2>
-      <p>BTPForms utilise des cookies pour assurer le bon fonctionnement du service et améliorer votre expérience utilisateur.</p>
+      <p>Dernière mise à jour : mars 2026. La présente politique décrit l'utilisation des cookies et technologies similaires sur le site btpforms.com et l'application app.btpforms.com, conformément à la directive ePrivacy et aux recommandations de la CNIL.</p>
+
       <h2>Qu'est-ce qu'un cookie ?</h2>
-      <p>Un cookie est un petit fichier texte stocké sur votre terminal lors de votre visite sur notre site. Il permet de mémoriser vos préférences et d'assurer votre session de connexion.</p>
-      <h2>Cookies utilisés</h2>
-      <ul><li><strong>Cookies essentiels</strong> : nécessaires au fonctionnement du service (session, authentification). Ne peuvent pas être désactivés.</li><li><strong>Cookies analytiques</strong> : nous permettent de comprendre comment vous utilisez le service pour l'améliorer. Anonymisés.</li></ul>
-      <h2>Gestion des cookies</h2>
-      <p>Vous pouvez gérer vos préférences de cookies depuis les paramètres de votre navigateur. La désactivation des cookies essentiels peut altérer le fonctionnement du service.</p>
+      <p>Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, tablette, smartphone) lors de votre navigation. Il permet au site de reconnaître votre appareil lors de visites ultérieures et de mémoriser certaines informations.</p>
+
+      <h2>Cookies utilisés sur btpforms.com</h2>
+      <ul>
+        <li><strong>Cookies strictement nécessaires</strong> : indispensables au fonctionnement du site (session utilisateur, authentification, sécurité CSRF). Ces cookies ne peuvent pas être désactivés sans altérer le service.</li>
+        <li><strong>Cookies fonctionnels</strong> : mémorisent vos préférences (langue, mode d'affichage) pour améliorer votre expérience.</li>
+        <li><strong>Cookies analytiques</strong> : collectent des données anonymisées sur l'utilisation du site (pages visitées, durée de session) pour améliorer nos services. Ces données ne permettent pas de vous identifier personnellement.</li>
+      </ul>
+
+      <h2>Cookies tiers</h2>
+      <ul>
+        <li><strong>Stripe</strong> : cookies nécessaires au traitement sécurisé des paiements</li>
+        <li><strong>Supabase</strong> : cookies de session pour l'authentification</li>
+      </ul>
+      <p>Nous n'utilisons pas de cookies publicitaires ou de traçage comportemental à des fins commerciales.</p>
+
+      <h2>Durée de conservation des cookies</h2>
+      <ul>
+        <li>Cookies de session : supprimés à la fermeture du navigateur</li>
+        <li>Cookies persistants : conservés entre 30 jours et 12 mois selon leur finalité</li>
+      </ul>
+
+      <h2>Gestion de vos préférences</h2>
+      <p>Vous pouvez à tout moment modifier vos préférences en matière de cookies via les paramètres de votre navigateur :</p>
+      <ul>
+        <li>Chrome : Paramètres → Confidentialité et sécurité → Cookies</li>
+        <li>Firefox : Options → Vie privée et sécurité → Cookies</li>
+        <li>Safari : Préférences → Confidentialité</li>
+        <li>Edge : Paramètres → Confidentialité, recherche et services</li>
+      </ul>
+      <p>La désactivation des cookies essentiels peut altérer le fonctionnement du service. La désactivation des cookies analytiques et fonctionnels n'affecte pas votre accès au service.</p>
+
       <h2>Contact</h2>
-      <p>Pour toute question relative à notre politique de cookies, contactez-nous à <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6616140f1007051f260412160009140b154805090b">[email&#160;protected]</a>.</p>
+      <p>Pour toute question relative à notre politique de cookies ou pour exercer vos droits, contactez-nous à <a href="mailto:hugo@astrova.fr" style="color:var(--P)">hugo@astrova.fr</a> ou <a href="mailto:thibaud@astrova.fr" style="color:var(--P)">thibaud@astrova.fr</a>.</p>
     </div>
   </div>
 </section>
@@ -611,8 +782,7 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
       </ul>
       <h4 style="font-size:11px;font-weight:700;color:#111827;text-transform:uppercase;letter-spacing:.07em;margin-bottom:14px;margin-top:22px">Ressources</h4>
       <ul style="list-style:none;display:flex;flex-direction:column;gap:8px">
-        <li><a href="aide.html" style="font-size:13px;color:#6B7280;text-decoration:none">Centre d'aide</a></li>
-        <li><a href="https://btpforms.com" style="font-size:13px;color:#6B7280;text-decoration:none">Tutoriel vidéo</a></li>
+                <li><a href="https://btpforms.com" style="font-size:13px;color:#6B7280;text-decoration:none">Tutoriel vidéo</a></li>
         <li><a href="changelog.html" style="font-size:13px;color:#6B7280;text-decoration:none">Nouveautés</a></li>
         <li><a href="contact.html" style="font-size:13px;color:#6B7280;text-decoration:none">Nous contacter</a></li>
       </ul>
@@ -637,7 +807,7 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
     </div>
   </div>
   <div class="ft-inline-bot">
-    <span style="font-size:12px;color:#6B7280">© 2026 BTPForms. Tous droits réservés.</span>
+    <span style="font-size:12px;color:#6B7280">© 2026 ASTROVA — BTPForms. Tous droits réservés.</span>
     <div style="display:flex;gap:20px">
       <a href="legal.html" style="font-size:12px;color:#6B7280;text-decoration:none">Confidentialité</a>
       <a href="legal.html" style="font-size:12px;color:#6B7280;text-decoration:none">CGV — CGU</a>
@@ -646,7 +816,7 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
   </div>
 </div>
 </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const nav=document.getElementById('nav');
 function upNav(){nav.classList.toggle('sc',window.scrollY>20)}
 upNav();window.addEventListener('scroll',upNav,{passive:true});
