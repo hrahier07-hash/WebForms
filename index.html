@@ -1864,7 +1864,7 @@ document.querySelectorAll('.fbv').forEach(el=>pObs.observe(el));
 </script>
 
 <!-- ══ MODAL RAPPEL ══ -->
-<div id="modal-rappel" style="display:none;position:fixed;inset:0;z-index:99000;background:rgba(6,6,14,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:20px">
+<div id="modal-rappel" onclick="if(event.target===this)closeRappel()" style="display:none;position:fixed;inset:0;z-index:99000;background:rgba(6,6,14,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:20px">
   <div style="background:#fff;border-radius:20px;padding:40px;max-width:480px;width:100%;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.2);animation:modalIn .28s cubic-bezier(.22,1,.36,1)">
     <button onclick="closeRappel()" style="position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;background:#f3f4f6;border:none;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;color:#6B7280;transition:background .15s" onmouseover="this.style.background='#e5e7eb'" onmouseout="this.style.background='#f3f4f6'">✕</button>
     <div style="width:48px;height:48px;background:#eef5ff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px">📞</div>
