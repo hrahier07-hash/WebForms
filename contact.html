@@ -512,7 +512,7 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
         <div class="f-grp"><label class="f-lbl">Email professionnel <span style="color:#3282DE">*</span></label><input id="c-email" type="email" class="f-inp" placeholder="jean.dupont@entreprise.fr"></div>
         <div class="f-grp"><label class="f-lbl">Entreprise <span style="color:#3282DE">*</span></label><input id="c-entreprise" type="text" class="f-inp" placeholder="Nom de votre société"></div>
         <div class="f-grp"><label class="f-lbl">Sujet <span style="color:#3282DE">*</span></label>
-          <select id="c-sujet" class="f-inp"><option>Question sur les fonctionnalités</option><option>Demande de démo</option><option>Support technique</option><option>Facturation / abonnement</option><option>Partenariat</option></select>
+          <select id="c-sujet" class="f-inp"><option>Question sur les fonctionnalités</option><option>Support technique</option><option>Facturation / abonnement</option><option>Partenariat</option></select>
         </div>
         <div class="f-grp"><label class="f-lbl">Message</label><textarea id="c-msg" class="f-inp f-textarea" placeholder="Décrivez votre besoin..."></textarea></div>
         <div id="c-error" style="display:none;background:#fff0f0;border:1px solid #fecdd3;border-radius:8px;padding:10px 14px;font-size:13px;color:#dc2626;margin-bottom:14px"></div>
@@ -736,5 +736,45 @@ function mmToggle(btn){
 
 </script>
 <script src="chatbot.js"></script>
+
+<script>
+function sendContact(){
+  var p=document.getElementById('c-prenom').value.trim(),
+      n=document.getElementById('c-nom').value.trim(),
+      e=document.getElementById('c-email').value.trim(),
+      en=document.getElementById('c-entreprise').value.trim(),
+      s=document.getElementById('c-sujet').value,
+      m=document.getElementById('c-msg').value.trim(),
+      err=document.getElementById('c-error'),
+      suc=document.getElementById('c-success'),
+      btn=document.getElementById('c-btn');
+  err.style.display='none';suc.style.display='none';
+  if(!p||!n||!e||!en){err.textContent='Veuillez remplir tous les champs obligatoires.';err.style.display='block';return;}
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){err.textContent='Adresse email invalide.';err.style.display='block';return;}
+  btn.textContent='Envoi en cours…';btn.style.opacity='.7';btn.disabled=true;
+  fetch('/api/contact',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({prenom:p,nom:n,email:e,entreprise:en,sujet:s,message:m})
+  })
+  .then(function(r){return r.json()})
+  .then(function(data){
+    if(data.success){
+      suc.style.display='block';
+      ['c-prenom','c-nom','c-email','c-entreprise','c-msg'].forEach(function(i){var el=document.getElementById(i);if(el)el.value='';});
+      btn.textContent='Envoyer le message';btn.style.opacity='1';btn.disabled=false;
+    } else {
+      err.textContent="Erreur lors de l'envoi. Réessayez ou écrivez-nous directement.";
+      err.style.display='block';
+      btn.textContent='Envoyer le message';btn.style.opacity='1';btn.disabled=false;
+    }
+  })
+  .catch(function(){
+    err.textContent='Erreur réseau. Réessayez dans quelques instants.';
+    err.style.display='block';
+    btn.textContent='Envoyer le message';btn.style.opacity='1';btn.disabled=false;
+  });
+}
+</script>
 </body>
 </html>
