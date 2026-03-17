@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tarifs BTPForms — Choisissez votre pack</title>
-<meta name="description" content="Découvrez les tarifs BTPForms. 3 packs adaptés à votre activité : Starter 19€, Avancé 49€, Entreprise 99€. Essai gratuit 7 jours, sans CB.">
+<meta name="description" content="Découvrez les tarifs BTPForms. 3 packs : Starter 19€, Avancé 49€, Entreprise 99€. Essai gratuit 7 jours sans CB.">
 <link rel="icon" type="image/png" href="/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
@@ -725,6 +725,12 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
 }
 
 </style>
+<style>
+.ft-inline-grid{display:grid;grid-template-columns:200px repeat(4,1fr);gap:40px;margin-bottom:48px;padding-top:60px}
+.ft-inline-bot{border-top:1px solid var(--border);padding:22px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:900px){.ft-inline-grid{grid-template-columns:repeat(2,1fr);gap:28px}}
+@media(max-width:640px){.ft-inline-grid{grid-template-columns:1fr;gap:24px;padding-top:40px}.ft-inline-bot{flex-direction:column;align-items:flex-start;gap:10px}}
+</style>
 </head>
 <body>
 <nav id="nav">
@@ -842,19 +848,17 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
   </div>
 </div>
 
-<!-- HERO TARIFS -->
-<div style="padding:124px 0 56px;border-bottom:1px solid var(--border);text-align:center;background:#fff">
+<div style="padding:124px 0 56px;border-bottom:1px solid var(--border);text-align:center">
   <div class="w">
     <div class="slbl rv">Tarifs</div>
-    <h1 style="font-size:clamp(32px,5vw,52px);font-weight:800;margin-bottom:14px;letter-spacing:-0.02em" class="rv">Choisissez le pack adapté<br>à votre activité</h1>
+    <h1 style="font-family:'IBM Plex Sans',sans-serif;font-size:clamp(32px,5vw,52px);font-weight:800;margin-bottom:14px;letter-spacing:-0.02em;color:var(--text)" class="rv">Choisissez le pack adapté<br>à votre activité</h1>
     <p style="font-size:17px;color:var(--muted);font-weight:300;max-width:520px;margin:0 auto" class="rv">7 jours d'essai gratuit, sans carte bancaire requise.</p>
   </div>
 </div>
 
-<!-- PRICING -->
-<section style="padding:64px 0">
+<section id="pricing" style="padding:64px 0">
 <div class="w">
-  <div style="text-align:center;margin-bottom:44px">
+  <div style="text-align:center">
     <div class="ptog-wrap rv">
       <button class="ptog-btn act" id="tb-m" onclick="setToggle('m')">Sans engagement</button>
       <button class="ptog-btn" id="tb-a" onclick="setToggle('a')">Engagement annuel <span class="ptog-badge">−20 %</span></button>
@@ -914,22 +918,20 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
       <a href="https://app.btpforms.com/auth/signup" class="pbtn pb-o">Choisir Entreprise</a>
     </div>
   </div>
-  <p class="ss" style="text-align:center;margin-top:28px">Générer vos formulaires n'aura jamais été aussi simple. <strong>7 jours d'essai gratuit</strong>, sans carte bancaire.</p>
+  <p class="ss rv" style="margin:28px auto 0;text-align:center">Générer vos formulaires n'aura jamais été aussi simple. <strong>7 jours d'essai gratuit</strong>, sans carte bancaire.</p>
 </div>
 </section>
 
-<!-- FAQ TARIFS -->
 <section style="padding:72px 0;border-top:1px solid var(--border)">
 <div class="w" style="max-width:760px;margin-left:auto;margin-right:auto">
   <h2 class="st rv" style="text-align:center;margin-bottom:40px">Questions fréquentes sur les tarifs</h2>
   <div class="faq-list">
-    <div class="fi"><div class="fq" onclick="faq(this)"><h3>L'essai gratuit, comment ça marche ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>7 jours avec tout débloqué, jusqu'à 50 soumissions. Pas de carte bancaire demandée. Si vous ne souscrivez pas à la fin, votre compte passe en lecture seule — vos données ne disparaissent pas.</p></div></div>
+    <div class="fi"><div class="fq" onclick="faq(this)"><h3>L'essai gratuit, comment ça marche ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>7 jours avec tout débloqué, jusqu'à 50 soumissions. Pas de carte bancaire demandée. Si vous ne souscrivez pas, votre compte passe en lecture seule — vos données ne disparaissent pas.</p></div></div>
     <div class="fi"><div class="fq" onclick="faq(this)"><h3>Puis-je changer de pack à tout moment ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Oui, vous pouvez upgrader ou downgrader à tout moment depuis vos paramètres. Le changement prend effet immédiatement.</p></div></div>
-    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Comment fonctionne la réduction annuelle ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>En choisissant l'engagement annuel, vous économisez 20% : Starter à 15€/mois, Avancé à 39€/mois, Entreprise à 79€/mois. La facturation est effectuée en une fois pour l'année.</p></div></div>
-    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Les prix incluent-ils la TVA ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Non, tous les prix affichés sont HT (hors taxes). La TVA applicable sera ajoutée lors de la facturation selon votre situation fiscale.</p></div></div>
-    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Que se passe-t-il si je dépasse mon quota de soumissions ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Vous recevez une notification lorsque vous approchez de votre limite. Le service n'est pas interrompu mais vous serez invité à upgrader votre pack.</p></div></div>
-    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Puis-je résilier à tout moment ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Oui, sans condition ni préavis pour le mensuel. Pour l'annuel, la résiliation prend effet à la fin de la période payée. Vos données restent accessibles 12 mois après résiliation.</p></div></div>
-    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Besoin d'un devis personnalisé ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Pour les grandes structures, contactez-nous à <a href="mailto:hugo@astrova.fr" style="color:var(--P)">hugo@astrova.fr</a>. Nous établissons des devis sur mesure.</p></div></div>
+    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Comment fonctionne la réduction annuelle ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>En choisissant l'engagement annuel, vous économisez 20% : Starter à 15€/mois, Avancé à 39€/mois, Entreprise à 79€/mois. Facturé en une fois pour l'année.</p></div></div>
+    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Les prix incluent-ils la TVA ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Non, tous les prix sont HT. La TVA applicable sera ajoutée lors de la facturation.</p></div></div>
+    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Puis-je résilier à tout moment ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Oui, sans condition pour le mensuel. Pour l'annuel, la résiliation prend effet à la fin de la période payée. Vos données restent accessibles 12 mois après résiliation.</p></div></div>
+    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Besoin d'un devis personnalisé ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Pour les grandes structures, contactez-nous à <a href="mailto:hugo@astrova.fr" style="color:var(--P)">hugo@astrova.fr</a>.</p></div></div>
   </div>
 </div>
 </section>
@@ -1017,12 +1019,7 @@ function setToggle(mode){
   document.getElementById('pa-e').textContent=prices[mode].e;
 }
 </script>
-<style>@keyframes modalIn{from{opacity:0;transform:scale(.94) translateY(8px)}to{opacity:1;transform:none}}
-.ft-inline-grid{display:grid;grid-template-columns:200px repeat(4,1fr);gap:40px;margin-bottom:48px;padding-top:60px}
-.ft-inline-bot{border-top:1px solid var(--border);padding:22px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-@media(max-width:900px){.ft-inline-grid{grid-template-columns:repeat(2,1fr);gap:28px}}
-@media(max-width:640px){.ft-inline-grid{grid-template-columns:1fr;gap:24px;padding-top:40px}.ft-inline-bot{flex-direction:column;align-items:flex-start;gap:10px}}
-</style>
+<style>@keyframes modalIn{from{opacity:0;transform:scale(.94) translateY(8px)}to{opacity:1;transform:none}}</style>
 <!-- ══ MODAL RAPPEL ══ -->
 <div id="modal-rappel" style="display:none;position:fixed;inset:0;z-index:99000;background:rgba(6,6,14,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:20px">
   <div style="background:#fff;border-radius:20px;padding:40px;max-width:480px;width:100%;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.2);animation:modalIn .28s cubic-bezier(.22,1,.36,1)">
@@ -1198,7 +1195,27 @@ function mmToggle(btn){
   if(!isOpen)section.classList.add('open');
 }
 </script>
-
 <script src="chatbot.js"></script>
+<script>
+// ── Templates carousel drag-to-scroll ──────────────────────────────────
+(function(){
+  var track = document.getElementById('tpl-track');
+  if(!track) return;
+  var isDown=false, startX, scrollLeft;
+  track.addEventListener('mousedown',function(e){
+    isDown=true; track.classList.add('dragging');
+    startX=e.pageX - track.offsetLeft; scrollLeft=track.scrollLeft;
+  });
+  track.addEventListener('mouseleave',function(){isDown=false;track.classList.remove('dragging')});
+  track.addEventListener('mouseup',function(){isDown=false;track.classList.remove('dragging')});
+  track.addEventListener('mousemove',function(e){
+    if(!isDown)return; e.preventDefault();
+    var x=e.pageX - track.offsetLeft;
+    track.scrollLeft = scrollLeft - (x - startX)*1.2;
+  });
+})();
+</script>
+
+
 </body>
 </html>
