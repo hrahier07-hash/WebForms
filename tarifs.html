@@ -306,7 +306,7 @@ p.ss{font-size:17px;color:var(--muted);line-height:1.72;max-width:500px;font-wei
 .ptog-badge{background:#dcfce7;color:#166534;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;margin-left:6px}
 
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.pcard{background:#fff;border:1px solid var(--border);border-radius:var(--rxl);padding:28px;position:relative;transition:transform .22s,box-shadow .22s}
+.pcard{background:#fff;border:1px solid var(--border);border-radius:var(--rxl);padding:28px;position:relative;transition:transform .22s,box-shadow .22s;display:flex;flex-direction:column}
 .pcard:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,0,0,.08)}
 .pcard.pop{border-color:var(--P);border-width:1.5px}
 .pcard.pop::before{content:'Le plus commandé';position:absolute;top:-1.5px;left:50%;transform:translateX(-50%);background:var(--P);color:#fff;font-size:11px;font-weight:700;padding:4px 14px;border-radius:0 0 9px 9px;white-space:nowrap;font-family:'IBM Plex Sans',sans-serif}
@@ -316,7 +316,7 @@ p.ss{font-size:17px;color:var(--muted);line-height:1.72;max-width:500px;font-wei
 .pusers{font-size:12px;color:var(--muted);margin:6px 0 10px}
 .pdesc{font-size:13px;color:var(--muted);margin-bottom:20px;font-weight:300;line-height:1.5}
 .psep{height:1px;background:var(--border);margin-bottom:20px}
-.pfl{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:24px}
+.pfl{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:24px;flex:1}
 .pfl li{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#374151;line-height:1.4}
 .pfl li::before{content:'';width:16px;height:16px;min-width:16px;border-radius:50%;margin-top:1px;background:#f0edff url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 8l3 3 7-6' stroke='%234F35F3' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat;border:1.5px solid rgba(50,130,222,.2)}
 .pfl li.off{color:var(--muted)}
@@ -934,7 +934,7 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
     <div class="fi"><div class="fq" onclick="faq(this)"><h3>Comment fonctionne la réduction annuelle ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>En choisissant l'engagement annuel, vous économisez 20% : Starter à 15€/mois, Avancé à 39€/mois, Entreprise à 79€/mois. Facturé en une fois pour l'année.</p></div></div>
     <div class="fi"><div class="fq" onclick="faq(this)"><h3>Les prix incluent-ils la TVA ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Non, tous les prix sont HT. La TVA applicable sera ajoutée lors de la facturation.</p></div></div>
     <div class="fi"><div class="fq" onclick="faq(this)"><h3>Puis-je résilier à tout moment ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Oui, sans condition pour le mensuel. Pour l'annuel, la résiliation prend effet à la fin de la période payée. Vos données restent accessibles 12 mois après résiliation.</p></div></div>
-    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Besoin d'un devis personnalisé ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Pour les grandes structures, contactez-nous à <a href="mailto:hugo@astrova.fr" style="color:var(--P)">hugo@astrova.fr</a> ou <a href="mailto:thibaud@astrova.fr" style="color:var(--P)">thibaud@astrova.fr</a>.</p></div></div>
+    <div class="fi"><div class="fq" onclick="faq(this)"><h3>Besoin d'un devis personnalisé ?</h3><div class="farr"><svg viewBox="0 0 12 12" fill="none" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></div></div><div class="fans"><p>Pour les grandes structures, contactez-nous à <a href="/cdn-cgi/l/email-protection#aec6dbc9c1eecfdddadcc1d8cf80c8dc" style="color:var(--P)"><span class="__cf_email__" data-cfemail="f49c81939bb4958780869b8295da9286">[email&#160;protected]</span></a> ou <a href="/cdn-cgi/l/email-protection#55213d3c3734203115342621273a23347b3327" style="color:var(--P)"><span class="__cf_email__" data-cfemail="72061a1b1013071632130106001d04135c1400">[email&#160;protected]</span></a>.</p></div></div>
   </div>
 </div>
 </section>
@@ -1001,7 +1001,7 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
 </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const nav=document.getElementById('nav');
 function upNav(){nav.classList.toggle('sc',window.scrollY>20)}
 upNav();window.addEventListener('scroll',upNav,{passive:true});
@@ -1199,10 +1199,4 @@ function mmToggle(btn){
 (function(){
   var track = document.getElementById('tpl-track');
   if(!track) return;
-  var isDown=false, startX, scrollLeft;
-  track.addEventListener('mousedown',function(e){
-    isDown=true; track.classList.add('dragging');
-    startX=e.pageX - track.offsetLeft; scrollLeft=track.scrollLeft;
-  });
-  track.addEventListener('mouseleave',function(){isDown=false;track.classList.remove('dragging')});
-  track.addEventListener('mouseup',function(){isDown=false;track.classList.remove('dra
+  var isDown=false, startX, scrol
