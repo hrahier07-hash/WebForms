@@ -385,14 +385,6 @@ p.ss{font-size:17px;color:var(--muted);line-height:1.72;max-width:500px;font-wei
 .pb{height:100%;background:linear-gradient(90deg,var(--P),var(--PL));border-radius:3px;transition:width 1.3s cubic-bezier(.22,1,.36,1)}
 
 /* SaaS integration card */
-.aloc{background:linear-gradient(140deg,#2F3970 0%,#1b2260 100%);border-radius:var(--rl);padding:16px}
-.aloh{display:flex;align-items:center;gap:8px;margin-bottom:14px}
-.alolog{font-family:'IBM Plex Sans',sans-serif;font-size:13px;font-weight:700;color:rgba(255,255,255,.9)}
-.alobdg{background:rgba(255,255,255,.14);font-size:10px;color:rgba(255,255,255,.65);padding:2px 8px;border-radius:5px;font-weight:600}
-.alor{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:12px}
-.alor:last-child{border-bottom:none}
-.alok{color:rgba(255,255,255,.45)}
-.alov{color:rgba(255,255,255,.88);font-weight:500}
 
 /* ── FEATURES GRID ── */
 .bg-alt{background:var(--bgl);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
@@ -1177,36 +1169,75 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
     </div>
   </div>
 
-  <!-- Block 2 — SaaS Integrations -->
+  <!-- Block 2 — Team collaboration -->
   <div class="fb fl">
     <div class="fbt">
-      <div class="badge-s"><span class="bdot"></span>App connexions</div>
-      <h2>Vos outils internes pré-remplissent vos formulaires</h2>
-      <p>Connectez votre logiciel de gestion. Client, chantier, adresse — tout se pré-remplit automatiquement. Fini la double saisie.</p>
+      <div class="badge-s"><span class="bdot"></span>Travail en équipe</div>
+      <h2>Toute l'équipe travaille sur les mêmes formulaires, en temps réel</h2>
+      <p>Invitez vos collègues, définissez les rôles, organisez vos formulaires par espace de travail. Chaque soumission terrain arrive instantanément dans le tableau de bord partagé.</p>
       <ul class="fbl">
-        <li>Activation en un clic depuis App connexions</li>
-        <li>Champs adresse, client, chantier auto-remplis</li>
-        <li>Envoi automatique des PDF vers vos outils</li>
-        <li>Connexion externe sur Pack Entreprise</li>
+        <li>Invitation par email en quelques secondes</li>
+        <li>Rôles distincts : propriétaire, créateur, lecteur</li>
+        <li>Espaces de travail séparés par chantier ou activité</li>
+        <li>Soumissions visibles par toute l'équipe en temps réel</li>
       </ul>
     </div>
     <div class="fbv rv">
       <div class="fbvi">
-        <div class="aloc">
-          <div class="aloh"><span class="alolog">🔗 App connexions — Outil connecté</span><span class="alobdg">Activé</span></div>
-          <div class="alor"><span class="alok">Référence chantier</span><span class="alov">Rénovation Paris 75011</span></div>
-          <div class="alor"><span class="alok">Client</span><span class="alov">Martin SAS</span></div>
-          <div class="alor"><span class="alok">Adresse</span><span class="alov">14 rue de la Paix, Paris</span></div>
-          <div class="alor"><span class="alok">Maître d'ouvrage</span><span class="alov">Jean-Pierre Martin</span></div>
-          <div class="alor"><span class="alok">Envoi auto PDF</span><span class="alov" style="color:#4ade80">✓ Actif</span></div>
-        </div>
-        <div class="vc">
-          <div class="vch"><span class="vct">Statut intégration</span><span class="tg tgg">Synchronisé</span></div>
-          <div class="vcr"><div class="vci">📤</div><div style="flex:1"><div class="vcl">PDF envoyé vers votre outil</div><div class="vcs">Dossier : Documents / 2026</div></div></div>
+        <!-- Team visual -->
+        <div style="display:flex;flex-direction:column;gap:10px;padding:4px">
+          <!-- Workspace header -->
+          <div style="background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);border-radius:12px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.45);letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px">Espace de travail</div>
+              <div style="font-size:13px;font-weight:700;color:#fff">Vinci Énergies — Chantiers 2026</div>
+            </div>
+            <div style="background:rgba(74,222,128,.15);border:1px solid rgba(74,222,128,.3);border-radius:7px;padding:3px 9px;font-size:10px;font-weight:700;color:#4ade80">3 membres</div>
+          </div>
+          <!-- Members list -->
+          <div style="background:#fff;border:1.5px solid var(--border);border-radius:12px;overflow:hidden">
+            <!-- Member row 1 -->
+            <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--border)">
+              <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#3282DE,#60A5FA);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff;flex-shrink:0">HC</div>
+              <div style="flex:1">
+                <div style="font-size:12px;font-weight:600;color:var(--text)">Hugo C.</div>
+                <div style="font-size:10.5px;color:var(--muted)">Propriétaire</div>
+              </div>
+              <div style="font-size:10px;font-weight:600;color:#3282DE;background:rgba(50,130,222,.08);border:1px solid rgba(50,130,222,.18);border-radius:6px;padding:2px 8px">Propriétaire</div>
+            </div>
+            <!-- Member row 2 -->
+            <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--border)">
+              <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#a78bfa);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff;flex-shrink:0">SM</div>
+              <div style="flex:1">
+                <div style="font-size:12px;font-weight:600;color:var(--text)">Sophie M.</div>
+                <div style="font-size:10.5px;color:var(--muted)">Conductrice de travaux</div>
+              </div>
+              <div style="font-size:10px;font-weight:600;color:#7c3aed;background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.18);border-radius:6px;padding:2px 8px">Créateur</div>
+            </div>
+            <!-- Member row 3 -->
+            <div style="display:flex;align-items:center;gap:10px;padding:10px 14px">
+              <div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#059669,#34d399);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff;flex-shrink:0">KL</div>
+              <div style="flex:1">
+                <div style="font-size:12px;font-weight:600;color:var(--text)">Karim L.</div>
+                <div style="font-size:10.5px;color:var(--muted)">Chef de chantier</div>
+              </div>
+              <div style="font-size:10px;font-weight:600;color:#059669;background:rgba(5,150,105,.08);border:1px solid rgba(5,150,105,.18);border-radius:6px;padding:2px 8px">Lecteur</div>
+            </div>
+          </div>
+          <!-- Live notification -->
+          <div style="display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid rgba(50,130,222,.2);border-radius:12px;padding:10px 14px;box-shadow:0 4px 14px rgba(50,130,222,.1)">
+            <div style="width:32px;height:32px;border-radius:10px;background:rgba(50,130,222,.1);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0">📥</div>
+            <div style="flex:1">
+              <div style="font-size:11.5px;font-weight:700;color:var(--text)">Nouvelle soumission reçue</div>
+              <div style="font-size:10px;color:var(--muted)">Rapport d'intervention · Karim L. · à l'instant</div>
+            </div>
+            <div style="width:8px;height:8px;background:#3282DE;border-radius:50%;flex-shrink:0;animation:nsnpulse 1.6s ease-in-out infinite"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- Block 3 — Soumissions -->
   <div class="fb">
