@@ -2143,5 +2143,18 @@ window.axeptioSettings = {
   t.parentNode.insertBefore(e, t);
 })(document, "script");
 </script>
+<script>
+  const observer = new MutationObserver(function() {
+    // Tente toutes les iframes Axeptio
+    document.querySelectorAll('iframe').forEach(function(iframe) {
+      try {
+        const doc = iframe.contentDocument || iframe.contentWindow.document;
+        const el = doc.querySelector('.axeptio-purposes');
+        if (el) el.style.display = 'none';
+      } catch(e) {} // cross-origin bloqué = silencieux
+    });
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+</script>
 </body>
 </html>
