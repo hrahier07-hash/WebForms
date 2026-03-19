@@ -520,6 +520,153 @@ footer{background:var(--bgl);border-top:1px solid var(--border);padding:60px 0 3
 .ftleg a{font-size:12px;color:var(--muted);transition:color .15s}
 .ftleg a:hover{color:var(--text)}
 
+
+/* ══════════════ TEMPLATES SECTION ══════════════ */
+.tpl-section{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.tpl-carousel-outer{position:relative;margin-top:52px;overflow:hidden;}
+/* Fade masks */
+.tpl-carousel-outer::before,.tpl-carousel-outer::after{
+  content:'';position:absolute;top:0;bottom:16px;width:72px;z-index:3;pointer-events:none;
+}
+.tpl-carousel-outer::before{left:0;background:linear-gradient(to right,#fff 30%,transparent)}
+.tpl-carousel-outer::after{right:0;background:linear-gradient(to left,#fff 30%,transparent)}
+/* Track */
+.tpl-track{
+  display:flex;gap:16px;
+  padding:4px 0 20px;
+  overflow:visible;
+  scrollbar-width:none;
+  cursor:grab;
+  will-change:transform;
+  width:max-content;
+}
+.tpl-track::-webkit-scrollbar{display:none}
+.tpl-track.dragging{cursor:grabbing;user-select:none}
+/* Card */
+.tpl-card{
+  background:#fff;border:1.5px solid var(--border);border-radius:16px;
+  min-width:240px;max-width:240px;flex-shrink:0;overflow:hidden;
+  transition:transform .22s cubic-bezier(.22,1,.36,1),box-shadow .22s,border-color .22s;
+}
+.tpl-card:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(0,0,0,.09);border-color:rgba(50,130,222,.25)}
+/* Card preview area */
+.tpl-preview{
+  background:#f0f2f5;height:150px;display:flex;align-items:center;
+  justify-content:center;position:relative;overflow:hidden;
+}
+.tpl-preview-form{display:flex;flex-direction:column;gap:7px;width:110px;opacity:.35}
+.tpl-preview-row{height:8px;background:#2F3970;border-radius:3px}
+.tpl-preview-row.w-full{width:100%}
+.tpl-preview-row.w-half{width:55%}
+.tpl-preview-2col{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.tpl-preview-box{height:24px;background:#2F3970;border-radius:4px}
+/* Card body */
+.tpl-card{display:flex;flex-direction:column}.tpl-card-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.tpl-cat{
+  display:inline-flex;align-items:center;
+  font-size:10px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  padding:3px 9px;border-radius:6px;border:1px solid;margin-bottom:12px;
+}
+.tpl-cat-chantier{background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe}
+.tpl-cat-livraison{background:#fdf4ff;color:#7e22ce;border-color:#e9d5ff}
+.tpl-cat-conformite{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
+.tpl-cat-securite{background:#fff1f2;color:#be123c;border-color:#fecdd3}
+.tpl-cat-presence{background:#f0fdf4;color:#15803d;border-color:#bbf7d0}
+.tpl-card h3{font-family:'IBM Plex Sans',sans-serif;font-size:15px;font-weight:700;color:var(--text);margin-bottom:5px;line-height:1.3}
+.tpl-card p{font-size:12.5px;color:var(--muted);line-height:1.55;font-weight:300;margin-bottom:16px;flex:1}
+.tpl-btn{
+  display:block;width:100%;text-align:center;
+  background:#06060E;color:#fff;font-size:13.5px;font-weight:600;
+  padding:10px 0;border-radius:9px;border:none;cursor:pointer;
+  font-family:'IBM Plex Sans',sans-serif;text-decoration:none;
+  transition:background .15s,transform .1s;
+}
+.tpl-btn:hover{background:#1a1a2e}
+.tpl-btn:active{transform:scale(.97)}
+/* CTA row */
+.tpl-cta-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:44px;flex-wrap:wrap}
+.tpl-pill{background:rgba(255,255,255,.25);color:#fff;font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:8px;margin-left:4px}
+/* Responsive */
+@media(max-width:900px){
+  .tpl-track{gap:14px}
+  .tpl-carousel-outer::before,.tpl-carousel-outer::after{width:44px}
+}
+@media(max-width:640px){
+  .tpl-card{min-width:210px;max-width:210px}
+  .tpl-track{gap:12px}
+  .tpl-carousel-outer::before,.tpl-carousel-outer::after{width:28px}
+  .tpl-preview{height:120px}
+  .tpl-cta-row{flex-direction:column;align-items:stretch}
+  .tpl-cta-row .bh1,.tpl-cta-row .bh2{justify-content:center;text-align:center}
+}
+@media(max-width:480px){
+  .tpl-card{min-width:190px;max-width:190px}
+  .tpl-card-body{padding:14px 14px 16px}
+}
+
+
+/* ── Screenshot embeds ── */
+.tpl-app-preview img{max-width:100%;height:auto}
+@media(max-width:640px){
+  .tpl-app-preview{padding:0 16px!important;margin-top:28px!important}
+}
+@media(max-width:480px){
+  .tpl-app-preview{padding:0 12px!important}
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .appbody{grid-template-columns:180px 1fr 220px}
+  .aps{display:none}
+  .appbody{grid-template-columns:1fr 220px}
+}
+@media(max-width:900px){
+  .w{padding:0 24px}
+  .wn{padding:0 24px}
+  .fb{grid-template-columns:1fr;gap:40px}
+  .fb.fl .fbv{order:0}
+  .fgrid{grid-template-columns:repeat(2,1fr)}
+  .howg{grid-template-columns:1fr}
+  .hstep:not(:first-child){border-left:none;border-top:1px solid var(--border)}
+  .igrid{grid-template-columns:1fr 1fr}
+  .pgrid{grid-template-columns:1fr}
+  .tgrid{grid-template-columns:1fr}
+  .ftg{grid-template-columns:1fr 1fr}
+  .appbody{grid-template-columns:1fr 200px;min-height:360px}
+  .aps{display:none}
+  .bin{gap:20px 32px}
+  .nstep-wrap{grid-template-columns:1fr;gap:16px}
+  .nstep-arrow{display:none}
+  .qr-fb{grid-template-columns:1fr;gap:40px}
+  .qrm-phone{display:none}
+  .qrm-notif{top:auto;bottom:-10px;right:8px}
+  .qr-usage-grid{grid-template-columns:1fr}
+  .qrm-visual-wrap{min-height:280px;margin-top:20px}
+}
+@media(max-width:640px){
+  .w{padding:0 16px}
+  .wn{padding:0 16px}
+  section{padding:72px 0}
+  .hstats{gap:20px 32px;margin-bottom:28px}
+  .ptog-btn{font-size:12.5px;padding:7px 14px}
+  .ptog-badge{display:block;margin:2px auto 0;text-align:center}
+  h1.ht{font-size:clamp(32px,8vw,56px)}
+  .hero{padding:96px 0 0}
+  .hi{padding-bottom:36px}
+  .hmkp{display:none}
+  .fgrid{grid-template-columns:1fr}
+  .igrid{grid-template-columns:1fr}
+  .ftg{grid-template-columns:1fr}
+  .bin{gap:16px 24px}
+  .bi{font-size:12.5px}
+  .hsdiv{display:none}
+  .ptog-wrap{width:100%;justify-content:center}
+  .ptog-btn{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 12px}
+  .pgrid{gap:14px}
+  .ctain{padding:72px 20px}
+  .ctaacts{flex-direction:column;align-items:center}
+}
+
 /* ══════════════════════════════════════════════════════
    HAMBURGER & MOBILE MENU
 ══════════════════════════════════════════════════════ */
@@ -756,7 +903,7 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
       <div class="dd ddw">
         <div>
           <div class="dct">Créer & Publier</div>
-          <a href="fonctionnalites-templates.html" class="dli"><div class="dico f-txt">📄</div><div><strong>Templates PDF</strong><span class="dsub">Uploadez vos PDF existants</span></div></a>
+          
           <a href="fonctionnalites-builder.html" class="dli"><div class="dico f-vio" style="background:#f5f3ff;border-radius:8px">🎨</div><div><strong>Builder visuel</strong><span class="dsub">Glisser-déposer sur le PDF</span></div></a>
           <a href="fonctionnalites-formulaires.html" class="dli"><div class="dico f-chk" style="background:#f0fdf4;border-radius:8px">🌐</div><div><strong>Formulaires publiés</strong><span class="dsub">Lien public ou privé sécurisé</span></div></a>
           <a href="fonctionnalites-signatures.html" class="dli"><div class="dico f-sign" style="background:#fff1f2;border-radius:8px">✍️</div><div><strong>Signature pad</strong><span class="dsub">Intégrée dans le PDF final</span></div></a>
@@ -808,7 +955,7 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
     </button>
     <div class="mm-links">
       <div style="font-size:10.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;padding:4px 10px 6px">Créer & Publier</div>
-      <a href="fonctionnalites-templates.html" class="mm-link"><div class="mm-link-ico">📄</div><div><strong>Templates PDF</strong><span>Uploadez vos PDF existants</span></div></a>
+      
       <a href="fonctionnalites-builder.html" class="mm-link"><div class="mm-link-ico" style="background:#f5f3ff">🎨</div><div><strong>Builder visuel</strong><span>Glisser-déposer sur le PDF</span></div></a>
       <a href="fonctionnalites-formulaires.html" class="mm-link"><div class="mm-link-ico" style="background:#f0fdf4">🌐</div><div><strong>Formulaires publiés</strong><span>Lien public ou privé sécurisé</span></div></a>
       <a href="fonctionnalites-signatures.html" class="mm-link"><div class="mm-link-ico" style="background:#fff1f2">✍️</div><div><strong>Signature pad</strong><span>Intégrée dans le PDF final</span></div></a>
@@ -1649,7 +1796,7 @@ img,video,iframe,svg.hero-img{max-width:100%;height:auto}
     <div class="ftcol">
       <h4>Fonctionnalités</h4>
       <ul class="ftlinks">
-        <li><a href="fonctionnalites-templates.html">Templates PDF</a></li>
+        <li><a href="#">Templates PDF</a></li>
         <li><a href="fonctionnalites-builder.html">Builder</a></li>
         <li><a href="fonctionnalites-formulaires.html">Formulaires publiés</a></li>
         <li><a href="fonctionnalites-signatures.html">Signature pad</a></li>
@@ -2009,5 +2156,27 @@ window.axeptioSettings = {
   });
   observer.observe(document.body, { childList: true, subtree: true });
 </script>
+<script>
+(function() {
+  function hideAxeptio() {
+    document.querySelectorAll('*').forEach(el => {
+      if (el.innerText && el.innerText.includes('Gérer mes choix')) {
+        el.style.display = 'none';
+      }
+    });
+  }
+  // run direct
+  hideAxeptio();
+  // observe changes
+  const observer = new MutationObserver(() => {
+    hideAxeptio();
+  });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+})();
+</script>
 </body>
+
 </html>
