@@ -799,6 +799,22 @@ window.axeptioSettings = {
   e.async = true; e.src = "//static.axept.io/sdk.js";
   t.parentNode.insertBefore(e, t);
 })(document, "script");
-</script>    
+</script>
+<script>
+  const observer = new MutationObserver(function() {
+    // Cible le bloc "Gérer mes choix"
+    const purposes = document.querySelector('.axeptio-purposes');
+    if (purposes) {
+      purposes.style.display = 'none';
+    }
+    // Si c'est un shadow DOM ou iframe, on tente aussi via le texte
+    document.querySelectorAll('[class*="axeptio"]').forEach(function(el) {
+      if (el.textContent.trim().startsWith('Gérer mes choix')) {
+        el.style.display = 'none';
+      }
+    });
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+</script>   
 </body>
 </html>
