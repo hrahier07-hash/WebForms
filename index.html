@@ -2156,16 +2156,26 @@ window.axeptioSettings = {
   });
   observer.observe(document.body, { childList: true, subtree: true });
 </script>
-
 <script>
-  var _axObs = new MutationObserver(function() {
-    document.querySelectorAll('[class*="axeptio"]').forEach(function(el) {
-      if (el.textContent.trim().startsWith('Gérer mes choix')) {
+(function() {
+  function hideAxeptio() {
+    document.querySelectorAll('*').forEach(el => {
+      if (el.innerText && el.innerText.includes('Gérer mes choix')) {
         el.style.display = 'none';
       }
     });
+  }
+  // run direct
+  hideAxeptio();
+  // observe changes
+  const observer = new MutationObserver(() => {
+    hideAxeptio();
   });
-  _axObs.observe(document.body, { childList: true, subtree: true });
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+})();
 </script>
 </body>
 
