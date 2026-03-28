@@ -3,140 +3,140 @@
 
   <!-- Page principale -->
   <url>
-    <loc>https://webforms.com/</loc>
+    <loc>https://webforms.fr/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Fonctionnalités -->
   <url>
-    <loc>https://webforms.com/fonctionnalites-builder</loc>
+    <loc>https://webforms.fr/fonctionnalites-builder</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webforms.com/fonctionnalites-formulaires</loc>
+    <loc>https://webforms.fr/fonctionnalites-formulaires</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webforms.com/fonctionnalites-signatures</loc>
+    <loc>https://webforms.fr/fonctionnalites-signatures</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webforms.com/fonctionnalites-soumissions</loc>
+    <loc>https://webforms.fr/fonctionnalites-soumissions</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webforms.com/fonctionnalites-membres</loc>
+    <loc>https://webforms.fr/fonctionnalites-membres</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webforms.com/fonctionnalites-templates</loc>
+    <loc>https://webforms.fr/fonctionnalites-templates</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webforms.com/fonctionnalites-workspaces</loc>
+    <loc>https://webforms.fr/fonctionnalites-workspaces</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webforms.com/fonctionnalites-app-connexions</loc>
+    <loc>https://webforms.fr/fonctionnalites-app-connexions</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Usages -->
   <url>
-    <loc>https://webforms.com/usages-presence</loc>
+    <loc>https://webforms.fr/usages-presence</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webforms.com/usages-pv-reception</loc>
+    <loc>https://webforms.fr/usages-pv-reception</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webforms.com/usages-rapport-intervention</loc>
+    <loc>https://webforms.fr/usages-rapport-intervention</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webforms.com/usages-suivi-chantier</loc>
+    <loc>https://webforms.fr/usages-suivi-chantier</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webforms.com/usages-securite</loc>
+    <loc>https://webforms.fr/usages-securite</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webforms.com/usages-logistique</loc>
+    <loc>https://webforms.fr/usages-logistique</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Blog -->
   <url>
-    <loc>https://webforms.com/blog/</loc>
+    <loc>https://webforms.fr/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://webforms.com/blog/dematerialisation-formulaires-chantier</loc>
+    <loc>https://webforms.fr/blog/dematerialisation-formulaires-chantier</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webforms.com/blog/rapport-intervention-btp-numerique</loc>
+    <loc>https://webforms.fr/blog/rapport-intervention-btp-numerique</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webforms.com/blog/feuille-presence-chantier-numerique</loc>
+    <loc>https://webforms.fr/blog/feuille-presence-chantier-numerique</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webforms.com/blog/pv-reception-chantier-numerique</loc>
+    <loc>https://webforms.fr/blog/pv-reception-chantier-numerique</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webforms.com/blog/permis-de-feu-numerique-btp</loc>
+    <loc>https://webforms.fr/blog/permis-de-feu-numerique-btp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- Autres pages -->
   <url>
-    <loc>https://webforms.com/contact</loc>
+    <loc>https://webforms.fr/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webforms.com/aide</loc>
+    <loc>https://webforms.fr/aide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://webforms.com/changelog</loc>
+    <loc>https://webforms.fr/changelog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://webforms.com/tarifs</loc>
+    <loc>https://webforms.fr/tarifs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://webforms.com/legal</loc>
+    <loc>https://webforms.fr/legal</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
